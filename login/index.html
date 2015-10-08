@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<style type="text/css">
+@import url("../css/style.css");
+
+</style>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+@import url("css/style.css");
+</style>
+</head>
+
+<body>
+<div class="container-fluid" >
+	<div class="row">
+<div class="col-xs-12 col-md-12 " >
+<button class="btn" type="button" style="border:1px solid black; float:right; margin-top:5px;margin-right:0px">Log Out</button>
+</div></div>
+
+<div class="row">
+<div class="col-md-3 " >
+</div>
+
+<div class="col-md-9 col-xs-6 " >
+
+<ul id="tabs">
+    <li><a href="#" title="tab1"><b>Requister/Supplier Information</b></a></li>
+    <li><a href="#" title="tab2"><b>Product/Sub-Product</a></li>
+    <li><a href="#" title="tab3"><b>1752A-classA</b></a></li>
+    <li><a href="#" title="tab4"><b>1752C-classC</b></a></li>
+    <li><a href="#" title="tab5"><b>1752D-classD</b></a></li>
+	<li><a href="#" title="tab6"><b>Legal Statement</b></a></li>
+	<li><a href="#" title="tab8"><b>Validation</b></a></li> 
+</ul>
+<div id="content" > 
+    <div id="tab1" >Form Type <input type="radio" name="a1" >
+      Requester/Replay
+				<input type="radio" name "a1" >Distributed
+			<br><br>
+			
+
+
+ <fieldset class="fieldset1">
+  <legend>Supplier Information</legend>
+  <table >
+         <tr>
+            <td>Company Name<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+         <tr>
+            <td>Supplier unique id<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Contact Name<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Contact Phone<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Contact Email<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Authorized Representative<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Representative Phone<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Representative Email<span class="red-star">*</span></td>
+            <td><input type="text" class="input1" /></td>
+         </tr>
+		 <tr>
+            <td>Response Date</td>
+            <td><input type="text"/></td>
+         </tr>
+      </table>
+ </fieldset>
+ 
+ <fieldset class="fieldset2">
+  <legend>Requester Information</legend>
+  <table>
+         <tr>
+            <td>Company Name<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+         
+		 <tr>
+            <td>Contact Name<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Contact Phone<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Contact Email<span class="red-star">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Request Date</td>
+            <td><input type="text"  /></td>
+         </tr>
+		 <tr>
+            <td>Response by Date</td>
+            <td><input type="text"/></td>
+         </tr>
+      </table>
+ </fieldset>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div id="tab2" >
+
+	<fieldset class="fieldset3">
+  <legend>Product Information</legend>
+  <table style="margin-top:-50px">
+         <tr>
+            <td>Request Item Number<span class="redstar">*</span></td>&nbsp&nbsp
+            <td><input type="text" class="input1"/></td>
+            <td>manufacturing Site<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+         <tr>
+            <td>Request Item Name<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>&nbsp&nbsp
+            <td>Supplier/Mfr Item Version<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Supplier/Mfr Item Number<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>&nbsp&nbsp
+             <td>Effective Date<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Supplier/Mfr Item Name<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>&nbsp&nbsp
+            <td>Devialion<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Unit of Measure<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>&nbsp&nbsp
+            <td>Mass Difference<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>measured Mass<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+		 <tr>
+            <td>Calculated Mass<span class="redstar">*</span></td>
+            <td><input type="text" class="input1"/></td>
+         </tr>
+         
+		 <tr>
+            <td>Unit Type<span class="red-star">*</span></td>
+            <td><input type="text" class="input1" /></td>
+         </tr>
+   </table>
+ </fieldset>
+
+     <fieldset class="fieldset3" style="margin-top:10px">
+  <legend>Additional Data Certificate</legend>
+  <table style="margin-top:-40px">
+         <tr>
+            <td><input type="text"  style="padding-right:150px;"/></td>
+			<td><button class="btn" style=" border-radious:5px; margin-right;border:1px solid black;" >  <i class="glyphicon glyphicon-paperclip" style="padding:10px 20px 10px 20px; "></i>
+			</button></td>
+			<td><button class="btn" style=" border-radious:5px; margin-right;border:1px solid black;" >  <i class="glyphicon glyphicon-trash" style="padding:10px 20px 10px 20px; "></i>
+			</button></td>
+         </tr>
+     </table></fieldset>
+     
+         
+		
+         
+</div>
+       
+	
+
+    <div id="tab3" >
+  
+      
+  <table  style="width:800px" border="1"  cellspacing="1" cellpadding="1" class="tableborder">
+  <thead>
+    <tr style="background-color:#EBEBE5; " colspan="22">
+      <th scope="col"  style="padding:12px;">Query List </th>
+      <th scope="col"style="padding:0 115px 0 115px;">Statement  </th>
+      <th scope="col" style="padding:0 15px 0 15px;">Response</th>
+      <th scope="col">Exemption ID</th>
+    </tr>
+	</thead>
+<tbody>	
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td class = "select">&nbsp;
+	  <!-- <select >        
+				<option value="b">&nbsp</option>
+                <option value="true"> true &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+                <option value="saab"> false &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+        </select> -->
+      
+	  	  </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+  </tbody>
+  <div>
+</table>
+<button class="btn" style=" border-radious:5px; margin-right;margin-top:20px;float:right; margin-right:600px;border:1px solid black;" >  <i class="glyphicon glyphicon-refresh" style="padding:10px 20px 10px 20px; "></i>
+</button>
+
+	
+	
+	</div> 
+	
+	
+	
+	
+	
+    <div id="tab4" style="margin-top:-50px;font-style: normal;">
+         sssss
+    </div>
+	<div id="tab5">
+	tab 555
+	</div>
+	<div id="tab6">
+	tab 666666
+	</div>
+	<div id="tab8">
+	tab 88888
+	</div>
+</div>
+</div>
+</div>
+<br><br>
+
+<script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+
+<script type="text/javascript" src="../js/indexv.js"></script>
+<script type="text/javascript" src="js/indexv.js"></script>
+
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</div>
+ 
+</body>
+</html>
