@@ -1,355 +1,1165 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-<meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<style type="text/css">
-@import url("../css/style.css");
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
 
-</style>
 
+<script type="text/javascript" src="js/tab1shuffel.js"></script>
+<script type="text/javascript" src="js/numberValidation.js"></script> 
+<script type="text/javascript" src="js/test.js"></script> 
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style type="text/css">
 @import url("css/style.css");
+@import url("css/navbar.css");
 </style>
 </head>
 
 <body>
-<div class="container-fluid" >
-	<div class="row">
-<div class="col-xs-12 col-md-12 " >
-<button class="btn" type="button" style="border:1px solid black; float:right; margin-top:5px;margin-right:0px">Log Out</button>
-</div></div>
-
-<div class="row">
-<div class="col-md-3 " >
-</div>
-
-<div class="col-md-9 col-xs-6 " >
-
-<ul id="tabs">
-    <li><a href="#" title="tab1"><b>Requister/Supplier Information</b></a></li>
-    <li><a href="#" title="tab2"><b>Product/Sub-Product</a></li>
-    <li><a href="#" title="tab3"><b>1752A-classA</b></a></li>
-    <li><a href="#" title="tab4"><b>1752C-classC</b></a></li>
-    <li><a href="#" title="tab5"><b>1752D-classD</b></a></li>
-	<li><a href="#" title="tab6"><b>Legal Statement</b></a></li>
-	<li><a href="#" title="tab8"><b>Validation</b></a></li> 
-</ul>
-<div id="content" > 
-    <div id="tab1" >Form Type <input type="radio" name="a1" >
-      Requester/Replay
-				<input type="radio" name "a1" >Distributed
-			<br><br>
-			
-
-
- <fieldset class="fieldset1">
-  <legend>Supplier Information</legend>
-  <table >
-         <tr>
-            <td>Company Name<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-         <tr>
-            <td>Supplier unique id<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Contact Name<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Contact Phone<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Contact Email<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Authorized Representative<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Representative Phone<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Representative Email<span class="red-star">*</span></td>
-            <td><input type="text" class="input1" /></td>
-         </tr>
-		 <tr>
-            <td>Response Date</td>
-            <td><input type="text"/></td>
-         </tr>
-      </table>
- </fieldset>
- 
- <fieldset class="fieldset2">
-  <legend>Requester Information</legend>
-  <table>
-         <tr>
-            <td>Company Name<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-         
-		 <tr>
-            <td>Contact Name<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Contact Phone<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Contact Email<span class="red-star">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Request Date</td>
-            <td><input type="text"  /></td>
-         </tr>
-		 <tr>
-            <td>Response by Date</td>
-            <td><input type="text"/></td>
-         </tr>
-      </table>
- </fieldset>
- </div>
- 
- 
- 
- 
- 
- 
- 
- <div id="tab2" >
-
-	<fieldset class="fieldset3">
-  <legend>Product Information</legend>
-  <table style="margin-top:-50px">
-         <tr>
-            <td>Request Item Number<span class="redstar">*</span></td>&nbsp&nbsp
-            <td><input type="text" class="input1"/></td>
-            <td>manufacturing Site<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-         <tr>
-            <td>Request Item Name<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>&nbsp&nbsp
-            <td>Supplier/Mfr Item Version<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Supplier/Mfr Item Number<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>&nbsp&nbsp
-             <td>Effective Date<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Supplier/Mfr Item Name<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>&nbsp&nbsp
-            <td>Devialion<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Unit of Measure<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>&nbsp&nbsp
-            <td>Mass Difference<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>measured Mass<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-		 <tr>
-            <td>Calculated Mass<span class="redstar">*</span></td>
-            <td><input type="text" class="input1"/></td>
-         </tr>
-         
-		 <tr>
-            <td>Unit Type<span class="red-star">*</span></td>
-            <td><input type="text" class="input1" /></td>
-         </tr>
-   </table>
- </fieldset>
-
-     <fieldset class="fieldset3" style="margin-top:10px">
-  <legend>Additional Data Certificate</legend>
-  <table style="margin-top:-40px">
-         <tr>
-            <td><input type="text"  style="padding-right:150px;"/></td>
-			<td><button class="btn" style=" border-radious:5px; margin-right;border:1px solid black;" >  <i class="glyphicon glyphicon-paperclip" style="padding:10px 20px 10px 20px; "></i>
-			</button></td>
-			<td><button class="btn" style=" border-radious:5px; margin-right;border:1px solid black;" >  <i class="glyphicon glyphicon-trash" style="padding:10px 20px 10px 20px; "></i>
-			</button></td>
-         </tr>
-     </table></fieldset>
-     
-         
-		
-         
-</div>
-       
-	
-
-    <div id="tab3" >
-  
-      
-  <table  style="width:800px" border="1"  cellspacing="1" cellpadding="1" class="tableborder">
-  <thead>
-    <tr style="background-color:#EBEBE5; " colspan="22">
-      <th scope="col"  style="padding:12px;">Query List </th>
-      <th scope="col"style="padding:0 115px 0 115px;">Statement  </th>
-      <th scope="col" style="padding:0 15px 0 15px;">Response</th>
-      <th scope="col">Exemption ID</th>
-    </tr>
-	</thead>
-<tbody>	
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td class = "select">&nbsp;
-	  <!-- <select >        
-				<option value="b">&nbsp</option>
-                <option value="true"> true &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
-                <option value="saab"> false &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
-        </select> -->
-      
-	  	  </td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-
-  </tbody>
-  <div>
-</table>
-<button class="btn" style=" border-radious:5px; margin-right;margin-top:20px;float:right; margin-right:600px;border:1px solid black;" >  <i class="glyphicon glyphicon-refresh" style="padding:10px 20px 10px 20px; "></i>
-</button>
-
-	
-	
-	</div> 
-	
-	
-	
-	
-	
-    <div id="tab4" style="margin-top:-50px;font-style: normal;">
-         sssss
+<div class="container-fixed" >
+<div style="margin-top:-10px; background-color:#EBEBE5;margin-left:-250px;" class="navbar navbar-default " >
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            
+            <ul class="nav navbar-nav" style="margin-top:-5px; margin-bottom:-5px; ">
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">File</a>
+                    <ul class="dropdown-menu multi-level" style="background-color:#EBEBE5;margin-top:-15px;">
+                        
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black" readonly>Import</a>
+                            <ul class="dropdown-menu" style="background-color:#EBEBE5">
+                                <li><a href="#" style="color:black">Import XML</a></li>
+								<li><a href="#" style="color:black">Import Excel</a></li>
+                            </ul>
+                        </li>
+						<li><a href="#" style="color:black">Export</a></li>
+                        <li><a href="#" style="color:black">Exit</a></li>
+                    </ul>
+                </li>
+				
+				 <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black" style="color:black">Edit</a>
+                    <ul class="dropdown-menu multi-level" style="background-color:#EBEBE5; margin-top:-15px">
+                        
+                        <li class="dropdown-submenu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Create</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" style="color:black">1752A Declaration</a></li>
+                            </ul>
+                        </li>
+						<li class="dropdown-submenu" style="position:relative; margin-top:1px">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Add</a>
+                            <ul class="dropdown-menu">
+								<li><a href="#" style="color:black">Product</a></li>
+								<li><a href="#" style="color:black">Sub-Product</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu" style="position:relative; margin-top:5px">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Delete</a>
+                            <ul class="dropdown-menu" >
+								
+								<li><a href="#" style="color:black">Declaration/Product/Sub-Product</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+				
+				 <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Settings</a>
+                    <ul class="dropdown-menu multi-level" style="background-color:#EBEBE5;margin-top:-15px">
+                        <li><a href="#" data-toggle="modal" data-target=".Admin">Configuration</a></li>  <!--Admin dialog box define at line no 1366-->
+                    </ul>
+                </li>
+				
+				 <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Help</a>
+                    <ul class="dropdown-menu multi-level" style="background-color:#EBEBE5;margin-top:-15px">
+                        <li><a href="#about" data-toggle="modal">About</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div><!--/.nav-collapse -->
     </div>
-	<div id="tab5">
-	tab 555
-	</div>
-	<div id="tab6">
-	tab 666666
-	</div>
-	<div id="tab8">
-	tab 88888
-	</div>
 </div>
-</div>
-</div>
-<br><br>
+	<div class="row">
+		<div class="col-lg-12 btnbar" style="background-color:#EBEBE5; margin-top:-35px; border-top:1px solid #ccc">
+			<table style="margin-top:3px">
+				<tbody>
+					<tr>
+						<td>
+							<div class="dropdown" >
+							<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#EBEBE5;  background-image: url(icons/down13.png);background-repeat: no-repeat;background-position: center;padding:10px 0px 10px 10px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span class="caret"></span></button>
+								<ul class="dropdown-menu" style="background-color:#EBEBE5">
+								  <li><a href="#">Import XML File</a></li>
+								  <li><a href="#">Import Excel File</a></li>
+								</ul>
+								</div>
+						</td>
+						<td>	
+							<button class="btn" data-target="#Export" data-toggle="modal" style="background-color:#EBEBE5; background-image: url(icons/up21.png); background-repeat: no-repeat;background-position: center; padding:16px 40px 24px 20px" > 
+							</button> <!-- Modal is define at line 1275 -->
+
+						</td>	
+						<td>
+							<button class="btn" href="#materialDashbord2" data-toggle="modal" style="background-color:#EBEBE5;  border-radious:5px; background-image: url(icons/add44.png); background-repeat: no-repeat;background-position: center; padding:20px 20px 20px 20px" >  
+									</button>					
+						</td>	
+						<td>
+							<div class="dropdown">
+								<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:#EBEBE5;  background-image: url(icons/category2.png);background-repeat: no-repeat;background-position: center;padding:10px 0px 10px 0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="caret"></span></button>
+									<ul class="dropdown-menu" style="background-color:#EBEBE5">
+									  <li><a href="#addProduct" data-toggle="modal">Add Product </a></li>
+									  <li><a href="#addSubProduct" data-toggle="modal">Add Sub-Product</a></li>
+									</ul>	
+							</div>
+						</td>
+						<td>
+							<button class="btn" style="background-color:#EBEBE5;  background-image: url(icons/document21.png);background-repeat: no-repeat;background-position: center;padding:20px 35px 20px 30px" >  
+									</button>
+						</td>
+						<td>
+							<button class="btn" style="background-color:#EBEBE5;  border-radious:5px;background-image: url(icons/write21.png);background-repeat: no-repeat;background-position: left; padding:20px 30px 20px 30px;" > 
+									</button>
+						</td>
+						<td>
+							<button class="btn" type="button" style="background-color:#EBEBE5; border:1px solid black; margin-left:800px">Log Out</button>
+						</td>
+					</tr>
+				</table>
+		</div>
+	</div>
+
+	<div class="row" >
+		<table>
+			<tr>
+				<div class="col-lg-12 ">
+				<td>
+					<div class="col-md-3 col-xs-6" >
+					</div>
+				</td>
+				<td>
+						<div class="container-fixed" style="float:left" >
+							<div class="col-md-9 col-xs-6 " >
+								<ul id="tabs">
+									<li><a href="#" title="tab1"><b>Requister/Supplier Information</b></a></li>
+									<li><a href="#" title="tab2"><b>Product/Sub-Product</a></li>
+									<li><a href="#" title="tab3"><b>1752A-classA</b></a></li>
+									<li><a href="#" title="tab4"><b>1752C-classC</b></a></li>
+									<li><a href="#" title="tab5"><b>1752D-classD</b></a></li>
+									<li><a href="#" title="tab6"><b>Legal Statement</b></a></li>
+									<li><a href="#" title="tab8"><b>Validation</b></a></li> 
+								</ul>
+								<div id="content" > 
+									<div id="tab1" >Form Type&nbsp; <input type="radio" name="a1" id="a1"/>Requester/Replay &nbsp;
+					  
+										<input type="radio" name="a1" id="a2"/>Distributed
+										<br><br>
+										<button href="#materialDashbord" data-toggle="modal" type="button" style="width:160px;background-color:#EBEBE5; float:right; margin-top:-50px" class="btn btn-default" data-dismiss="modal">Material Dashbord</button>
+							
+
+
+										<fieldset class="fieldset1" id="div1">
+											<legend><b>Supplier Information</b></legend>
+												<table>
+													 <tr>
+														<td>Supplier unique id<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 <tr>
+														<td>Contact Name<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 <tr>
+														<td>Contact Phone<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 <tr>
+														<td>Contact Email<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 <tr>
+														<td>Authorized Representative<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+														<td><button class="btn" data-toggle="tooltip" title="Add Document" style="background-color:#EBEBE5;  border-radious:5px;background-image: url(icons/copy26.png);background-repeat: no-repeat;background-position: center;padding:20px 20px 20px 20px;" > 
+															</button>
+														</td>
+													 </tr>
+													 <tr>
+														<td>Representative Phone<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 <tr>
+														<td>Representative Email<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 <tr>
+														<td> Response Date</td>
+														<td>
+															
+															<span class="form-group" >
+																<span class="input-group date form_date " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+																	<input  class="input2 " type="text" style="margin:6px ;width:140px" value="" readonly>
+																	<!-- <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> -->
+																	<span class="input-group-addon" ><span class="glyphicon glyphicon-calendar"></span></span>
+																</span>
+																<!-- <input type="hidden" id="dtp_input2" value="" /><br/> -->
+															</span>
+																
+														</td>
+													 </tr>
+												</table>
+												<table><tr><td>
+												<button href="#Saddress" data-toggle="modal" type="button" style="width:360px;background-color:#EBEBE5; text-align:left; margin-top:20px" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-triangle-bottom"></span>&nbsp;&nbsp;Surface Address</button> 
+												</td></tr><tr><td>
+												<button href="#Adetails" data-toggle="modal" type="button" style="width:360px;background-color:#EBEBE5; text-align:left; margin-top:20px" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-triangle-bottom"></span>&nbsp;&nbsp;Additional Details</button>
+												</td></tr></table>
+										</fieldset>
+										
+										
+										
+										<fieldset class="fieldset2" id="div2">
+											<legend><b>Requester Information</b></legend>
+											  <table>
+													 <tr>
+														<td>Company Name<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 
+													 <tr>
+														<td>Contact Name<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 <tr>
+														<td>Contact Phone<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 <tr>
+														<td>Contact Email<span class="red-star">*</span></td>
+														<td><input type="text" class="input1" style="margin:6px"/></td>
+													 </tr>
+													 <tr>
+														<td>Request Date</td>
+														<td>
+															<span class="form-group" >
+																<span class="input-group date form_date " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+																	<input  class="input2 " type="text" style="margin:6px ;width:140px" value="" readonly>
+																	<!-- <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> -->
+																	<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+																</span>
+																<!-- <input type="hidden" id="dtp_input2" value="" /><br/> -->
+															</span>	
+														</td>
+													 </tr>
+													 <tr>
+														<td>Response by Date</td>
+														<td>
+															
+															<span class="form-group" >
+																<span class="input-group date form_date " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+																	<input  class="input2 " type="text" style="margin:6px ;width:140px" value="" readonly>
+																	<!-- <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> -->
+																	<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+																</span>
+																<!-- <input type="hidden" id="dtp_input2" value="" /><br/> -->
+															</span>
+																
+														</td>
+													 </tr>
+												  </table>
+												  <table><tr><td>
+												<button href="#Saddress1" data-toggle="modal" type="button" style="width:360px;background-color:#EBEBE5; text-align:left; margin-top:20px" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-triangle-bottom"></span>&nbsp;&nbsp;Surface Address</button> 
+												</td></tr><tr><td>
+												<button href="#Adetails1" data-toggle="modal" type="button" style="width:360px;background-color:#EBEBE5; text-align:left; margin-top:20px" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-triangle-bottom"></span>&nbsp;&nbsp;Additional Details</button>
+												</td></tr></table>
+										</fieldset>
+									</div>
+				 
+				 
+				 
+				 
+				 
+				 
+				 
+									<div id="tab2">
+										<fieldset class="fieldset3">
+											<legend><b>Product Information</b></legend>
+											<table style="margin-top:-30px"	>
+											 <tr>
+												<td>Request Item Number<span class="redstar">*</span></td>
+												<td><input type="text" class="input1" style="margin:6px"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+												<td>manufacturing Site<span class="redstar">*</span></td>
+												<td><input type="text" class="input1"/></td>
+											 </tr>
+											 <tr>
+												<td>Request Item Name*</span></td>
+												<td><input type="text" class="input1" style="margin:6px"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+												<td>Supplier/Mfr Item Version<span class="redstar">*</span></td>
+												<td><input type="text" class="input1"/></td>
+											 </tr>
+											 <tr>
+												<td>Supplier/Mfr Item Number</td>
+												<td><input type="text" class="input1" style="margin:6px"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+												 <td>Effective Date<span class="redstar">*</span></td>
+												<!-- <td><input type="date" class="input1"/></td> -->
+												<td>
+													<span class="form-group" >
+														<span class="input-group date form_date " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+															<input  class="input1 " type="text" style="margin:6px ;width:140px; margin-left:2px" value="" readonly>
+															<!-- <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span> -->
+															<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+														</span>
+																<!-- <input type="hidden" id="dtp_input2" value="" /><br/> -->
+													</span>	
+												</td>
+											 </tr>
+											 <tr>
+												<td>Supplier/Mfr Item Name &nbsp;<span class="redstar">*</span></td>
+												<td><input type="text" class="input1" style="margin:6px"/></td>  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+												<td>Devialion<span class="redstar">*</span></td>
+												<td><input type="text" class="input1"/></td>
+											 </tr>
+											 <tr>
+												<td>Unit of Measure<span class="redstar">*</span></td>
+												<td><input type="text" class="input1" style="margin:6px"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+												<td>Mass Difference<span class="redstar">*</span></td>
+												<td><input type="text" class="input1"/></td>
+											 </tr>
+											 <tr>
+												<td>measured Mass<span class="redstar">*</span></td>
+												<td><input type="text" class="input1"style="margin:6px"/></td>
+											 </tr>
+											 <tr>
+												<td>Calculated Mass<span class="redstar">*</span></td>
+												<td><input type="text" class="input1" style="margin:6px"/></td>
+											 </tr>
+											 
+											 <tr>
+												<td>Unit Type<span class="red-star">*</span></td>
+												<td><input type="text" class="input1" style="margin:6px"/></td>
+											 </tr>
+											</table>
+										</fieldset>
+
+										<fieldset class="fieldset3" style="margin-top:10px">
+										  <legend><b>Additional Data Certificate</b></legend>
+											<table style="margin-top:-40px">
+											 <tr>
+												<td><input type="text"  style="padding-right:150px;"/></td><td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td	>
+												<td><button class="btn" data-toggle="tooltip" title="Add Document" style=" background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes7.png);background-repeat: no-repeat;background-position: center;padding:20px 20px 20px 20px;" > 
+												</button></td><td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td	>
+												<td><button class="btn" data-toggle="tooltip" title="Delete Document" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes6.png);background-repeat: no-repeat;background-position: center;padding:20px 20px 20px 20px;" > 
+												</button></td>
+											 </tr>
+											</table>
+										</fieldset>
+										<button type="button" href="#materialDashbord1" data-toggle="modal" style="width:160px;background-color:#EBEBE5; margin-top:400px; margin-left:60px" class="btn btn-default" data-dismiss="modal">Material Dashbord</button>
+					 
+						 
+						
+						 
+									</div>
+					   
+					
+
+									<div id="tab3" >
+				  
+					  
+										<table  style="width:1000px;" border="1"  cellspacing="1" cellpadding="1" class="tableborder">
+										  <thead>
+											<tr style="background-color:#EBEBE5; " >
+											  <th scope="col"  style="padding:12px;text-align:center">Query List </th>
+											  <th scope="col"style="padding:0 115px 0 115px;text-align:center">Statement  </th>
+											  <th scope="col" style="padding:0 15px 0 15px;text-align:center">Response</th>
+											  <th scope="col" style="text-align:center">Exemption ID</th>
+											</tr>
+											</thead>
+										<tbody>	
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td class = "select">&nbsp;
+											  <!-- <select >        
+														<option value="b">&nbsp</option>
+														<option value="true"> true &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+														<option value="saab"> false &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</option>
+												</select> -->
+											  
+												</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+											<tr>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											  <td>&nbsp;</td>
+											</tr>
+
+										  </tbody>
+										  
+										</table>
+										
+								
+											<button class="btn" data-toggle="tooltip" title="Clear All Fields" style="border:1px solid #ccc ;background-color:#EBEBE5; border-radious:5px;margin-left:430px;margin-top:20px;background-image: url(icons/recycle27.png);background-repeat: no-repeat;background-position: center;padding:20px 30px 20px 30px;" > 
+											</button>
+					
+										 
+					
+									</div>
+					
+					
+					
+									<div id="tab4" style="margin-top:-30px;font-style: normal; padding-right:35px">
+										<table style="width:1050px; text-align:center; margin-left:-45px;" "   cellspacing="1" cellpadding="1">
+											<thead >
+												<th style="padding:5px 7px 5px 7px;">Substance Category List</th>
+												<th style="padding:5px 7px 5px 7px;">Substance Category Name </th>
+												<th style="padding:5px 10px 5px 10px;">Threshold</th>
+												<th style="padding:5px 10px 5px 10px;">Above Threshold</th>
+												<th style="padding:5px 10px 5px 10px;">Mass</th>
+												<th style="padding:5px 10px 5px 10px;">UOM</th>
+												<th style="padding:5px 10px 5px 10px;">Exemptions type</th>
+												<th style="margin:8px">Exemptions</th>
+												<th>Concentration (%)</th>
+												<th style="padding:5px 10px 5px 10px;">Remarks</th>
+											</thead>
+											<tbody style="margin-top:-35px">
+												<tr>
+												  <td class = "select" style="margin:8px">
+												   <select class="input1">        
+														<option value="b">&nbsp </option>
+														<option value="true">.................... .....&nbsp&nbsp</option>
+														<option value="saab"> &nbsp&nbsp</option>
+												   </select>
+												  </td>
+												  <td class = "select" style="margin:8px">
+												   <select class="input1">        
+														<option value="b">&nbsp </option>
+														<option value="true">........................... &nbsp&nbsp</option>
+														<option value="saab"> &nbsp&nbsp</option>
+												   </select>
+												  </td>
+												  <td class = "select" style="margin:8px">
+												   <select class="input1">        
+														<option value="b">&nbsp </option>
+														<option value="true"> ..............</option>
+														<option value="saab"> &nbsp&nbsp</option>
+												   </select>
+												  </td>
+												  <td class = "select" style="margin:10px">
+												   <select class="input1">        
+														<option value="b">&nbsp </option>
+														<option value="true"> ..............&nbsp&nbsp</option>
+														<option value="saab"> &nbsp&nbsp</option>
+												   </select>
+												  </td>
+												  <td class = "select">
+												   <select style="margin-right:10px" class="input1">        
+														<option value="b">&nbsp </option>
+														<option value="true"> ........</option>
+														<option value="saab"> &nbsp&nbsp</option>
+												   </select>
+												  </td>
+												  <td class = "select" style="margin-left:8px">
+												   <select class="input1">        
+														<option value="b">&nbsp </option>
+														<option value="true"> ......</option>
+														<option value="saab"> </option>
+												   </select>
+												  </td>
+												  <td class = "select" >
+												   <select style="margin:0 auto;">        
+														<option value="b">&nbsp </option>
+														<option value="true"> .............</option>
+														<option value="saab"> &nbsp&nbsp</option>
+												   </select>
+												  </td>
+												 <td><input href="#excemption" data-toggle="modal" type="text" style="width: 80px; margin:8px" /></td>
+												 <td><input type="text"  style="width: 80px;margin:8px"/></td>
+												 <td><textarea rows="1" cols="15" name="comment" style="margin:12px">
+													</textarea></td>
+												</tr>
+											</tbody>
+										 </table>
+										 
+										 <!-- for 3 middle buttons -->
+										 <table style="margin-top:40px; margin-left:375px;" >
+										 <tr>
+											<td><button class="btn" data-toggle="tooltip" title="Add Substance" style="border:1px solid #ccc; background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes7.png);background-repeat: no-repeat;background-position: center;padding:20px 30px 20px 30px;" > 
+											</button></td><td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td	>
+											<td><button class="btn" data-toggle="tooltip" title="Delete Substance" style="border:1px solid #ccc;background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes6.png);background-repeat: no-repeat;background-position: center;padding:20px 30px 20px 30px;" > 
+											</button></td><td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td	>
+											<td><button class="btn" data-toggle="tooltip" title="Update Substance" style="border:1px solid #ccc; background-color:#EBEBE5; border-radious:5px;background-image: url(icons/checked20.png);background-repeat: no-repeat;background-position: center;padding:20px 40px 20px 20px;" >
+											</button></td>
+										 </tr>
+										</table>
+					 
+										<table  style="width:1050px;margin-top:30px; margin-left:-45px;" border="1"  cellspacing="1" cellpadding="1" class="tableborder">
+											<thead>
+												<tr style="background-color:#EBEBE5; ">
+												  <th style="padding:5px 15px 5px 15px;" >Substance Category List</th>
+													<th style="padding:5px 15px 5px 15px;">Substance Category Name </th>
+													<th style="padding:5px 20px 5px 20px;">Threshold</th>
+													<th style="padding:5px 15px 5px 15px;">Above Threshold</th>
+													<th style="padding:5px 30px 5px 30px;">Mass</th>
+													<th style="padding:5px 30px 5px 30px;">UOM</th>
+													<th style="padding:5px 60px 5px 60px;">Exemptions</th>
+													<th >Concentration        (%)</th>
+													<th style="padding:5px 80px 5px 80px;"	>Remarks</th>
+												</tr>
+											</thead>
+											<tbody>	
+												<tr>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												</tr>
+												<tr>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												</tr>
+												<tr>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												</tr>
+												<tr>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												</tr>
+												<tr>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												</tr>
+												<tr>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												</tr>
+												<tr>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												</tr>
+												<tr>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												</tr>
+												<tr>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												  <td>&nbsp;</td>
+												</tr>
+												</tbody>
+											</table>
+									</div>
+									<div id="tab5">
+										<table>
+											<tbody>
+											<tr>
+												<td>
+													<fieldset class="fieldset4" >
+														<legend><b>Product/Sub-Product Info </b></legend>
+															<table style="margin-top:-13px; margin-bottom:5px">
+																<tr>
+																	<td>&nbsp;&nbsp; </td>
+																	<td>Mass<input type="text" style="margin-left:20px"/></td>
+																	<td class = "select">
+																	   <select style="margin-left:20px">        
+																			<option value="b">&nbsp </option>
+																			<option value="true">.............&nbsp&nbsp</option>
+																			<option value="saab"> &nbsp&nbsp</option>
+																	   </select>
+																	</td>
+																	<td><button class="btn" data-toggle="tooltip" title="Preview Materials" style="background-color:#EBEBE5; border-radious:5px;margin-left:20px;background-image: url(icons/data20.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																	
+																		</button>
+																	</td>
+																</tr>
+															</table>
+													</fieldset>
+												</td>
+												</tr>
+												<tr>
+												<td>
+													<fieldset class="fieldset5" >
+														<legend	><b>Material Info</b></legend>
+														<table style="margin-left:20px;margin-top:-15px;">
+															 <tr>
+																<td> </td>
+																<td><input type="checkbox" id="chkbox" name="chkbox" onchange="enableDisable() ,enableDisable1(), enableDisable2(), enableDisable3();" />&nbsp; Declare substances in concentration(%)</td>
+															 </tr>
+															 <tr>
+																<td>material Name<span class="red-star" >*</span></td>
+																<td><input type="text" class="input1" style=" margin-top:8px; margin-bottom:8px" /></td>
+															 </tr>
+															 <tr>
+																
+																<td>Mass <span id="star">* &nbsp;</span></td>										
+																<td><input type="text" onkeypress = "return numericOnly(this);"  ondrop = "return false;" id="txtBox" class="input2" style=" margin-top:8px; margin-bottom:8px; background-color:#fff " disabled="disabled" /></td>
+																
+															
+															 </tr>
+															 <tr>
+																<td>Unit of Measure <span class="red-star">*&nbsp;</span></td>
+																<td class = "select" style=" margin-top:8px">
+																	   <select class="input1">        
+																			<option value="b">&nbsp;&nbsp  </option>
+																			<option value="b">&nbsp;&nbsp g </option>
+																			<option value="true">&nbsp&nbsp mg</option>
+																			<option value="saab"> &nbsp&nbsp kg</option>
+																	   </select>
+																</td>
+															 </tr>
+														</table>
+															<fieldset class="fieldset6">
+																	<legend class="legend1"><b>Material Add/Delete/Update</b></legend>
+											  
+																		<table style="margin-top:-10px; margin-bottom:10px; margin-left:3px">
+																			<tr>
+																				<td><button class="btn" data-toggle="tooltip" title="Add Material" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes7.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																				</button></td><td>&nbsp;</td	>
+																				<td><button class="btn" data-toggle="tooltip" title="Delete Material" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes6.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																				</button></td><td>&nbsp;</td	>
+																				<td><button class="btn" data-toggle="tooltip" title="Update Material" disabled style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/checked20.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																				</button></td><td>&nbsp;</td	>
+																				<td><button class="btn" data-toggle="tooltip" title="Duplicate Material" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/duplicate1.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																				</button></td><td>&nbsp;</td	>
+																				<td><button class="btn" data-toggle="tooltip" title="Clear All Fields" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/recycle27.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																				</button></td>
+																			</tr>
+																		</table>
+																			  
+															</fieldset>
+															<fieldset class="fieldset7" >
+																<legend class="legend1"><b>Supporting Doc</b></legend>
+																		<table style="margin-top:-10px; margin-bottom:10px; margin-left:3px">
+																			<tr>
+																				<td><button class="btn" data-toggle="tooltip" title="Add Supporting Doc" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes7.png);background-repeat: no-repeat;background-position: center;padding:20px 20px 20px 20px;" > 
+																				</button></td><td>&nbsp;  </td	>
+																				<td><button class="btn" data-toggle="tooltip" title="Delete Supporting Doc" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes6.png);background-repeat: no-repeat;background-position: center;padding:20px 20px 20px 20px;" > 
+																				<td>  &nbsp;</td	>
+																				<td><input type="text" style="width: 80px;"/></td>
+																			</tr>
+																		</table>
+															</fieldset>			
+																		
+																		<table style="width: 488px; margin-left:5px;margin-top:10px; margin-bottom:10px;" border="1"  cellspacing="1" cellpadding="1">
+																			<thead>
+																				<tr style="background-color:#EBEBE5; text-align:center">
+																				  <th scope="col"  style="padding:5px 50px 5px 50px;">Name</th>
+																				  <th scope="col"style="padding:0 20px 0 20px;">Mass</th>
+																				  <th scope="col" style="padding:0 15px 0 15px;">UOM</th>
+																				  <th scope="col">&nbsp; Supporting Document</th>
+																				</tr>
+																			</thead>
+																			<tbody style="background-color:#fff;">	
+																				<tr>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				</tr>
+																				<tr>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				</tr>
+																				<tr>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				</tr>
+																				<tr>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				</tr>
+																				<tr>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				</tr>
+																				<tr>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				</tr>
+																				<tr>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				</tr>
+																				<tr>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				</tr>
+																				<tr>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				  <td>&nbsp;</td>
+																				</tr>
+																			</tbody>	
+																		</table>
+											  
+															
+														<!-- </div> -->
+										  
+													</fieldset>
+													</td>
+													<td>
+													<fieldset class="fieldset8">
+														<legend> <b>substances Info</b>
+														</legend>
+															<table style="width:488; margin-left:10px; margin-top:25px; text-align:left">
+															<tbody>
+															<tr >
+																<td> Substance Category <span class="redstar">*</span></td>
+																<td class = "select" >
+																	   <select class="input1" style=" margin:8px;width: 100px;">        
+																			<option value="b">&nbsp </option>
+																			<option value="true">.............&nbsp&nbsp</option>
+																			<option value="saab"> &nbsp&nbsp</option>
+																	   </select>
+																</td>
+																<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+																<td>Mass<span id="star2">*</span></td>
+																<td><input type="text" onkeypress = "return numericOnly(this);"  ondrop = "return false;" id="txtBox2" style="width: 100px;"  class="input1"/></td>
+															 </tr>
+															 <tr>
+																<td>Substance<span class="redstar">*</span></td>
+																<td class = "select" >
+																	   <select class="input1" style=" margin:8px;width: 100px">        
+																			<option value="b">&nbsp </option>
+																			<option value="true">.............&nbsp&nbsp</option>
+																			<option value="saab"> &nbsp&nbsp</option>
+																	   </select>
+																</td>
+																</td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+																<td>Unit Of Measure<span id="star3">*</span></td>
+																<td class = "select"  >
+																	   <select class="input1" id="txtBox3" style="width:90px;float:right">    
+																			<option value="b">&nbsp;&nbsp  </option>
+																			<option value="b">&nbsp;&nbsp g </option>
+																			<option value="true">&nbsp&nbsp mg</option>
+																			<option value="saab"> &nbsp&nbsp kg</option>
+																	   </select>
+																</td>
+															 </tr>
+															 <tr style="padding-bottom: 5em;">
+																<td>CAS<span class="redstar">*</span></td>
+																<td><input type="text" style="width: 100px; margin:8px" class="input1"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+																<td>Concentration(%)<span id="star1">*</span></td>
+																<td><input type="text" onkeypress = "return numericOnly(this);"  ondrop = "return false;" style="width: 90px; float:right; background-color:#fff" class="input1" id="txtBox1" disabled="disabled" /></td>
+															 </tr>
+															 <tr style="padding-bottom: 5em;">
+																<td></td>
+																<td></td>  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+																<td >Exemption Type <span class="redstar">*</span></td>
+																<td class = "select" >
+																	   <select style="width:100px;">        
+																			<option value="b">&nbsp </option>
+																			<option value="true">.............&nbsp&nbsp</option>
+																			<option value="saab"> &nbsp&nbsp</option>
+																	   </select>
+																</td>
+															 </tr>
+															 <tr style="padding-bottom: 5em;">
+																<td></td>
+																<td></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+																<td>Exemption ID<span class="redstar">*</span></td>
+																<td><input type="text" style="width: 100px;margin-top:8px" class="input1"/></td>
+															 </tr>
+															</tbody>
+															</table>
+															
+															<fieldset class="fieldset9">
+																	<legend class="legend1"><b>Material Add/Delete/Update</b></legend>
+											  
+																		<table style="margin-top:-10px; margin-bottom:10px; margin-left:40px">
+																			<tr>
+																				<td><button class="btn" data-toggle="tooltip" title="Add Substance" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes7.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																				</button></td><td>&nbsp;</td	>
+																				<td><button class="btn" data-toggle="tooltip" title="Delete Substance" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/notes6.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																				</button></td><td>&nbsp;</td	>
+																				<td><button class="btn" data-toggle="tooltip" title="Update Substance" disabled style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/checked20.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																				</button></td><td>&nbsp;</td	>
+																				<td><button class="btn" data-toggle="tooltip" title="Clear All Fields" style="background-color:#EBEBE5; border-radious:5px;background-image: url(icons/recycle27.png);background-repeat: no-repeat;background-position: center;padding:20px 25px 20px 25px;" > 
+																				</button></td>
+																			</tr>
+																		</table>
+																			  
+															</fieldset>
+															
+															<table style="width: 488px; margin-left:5px;margin-top:10px; margin-bottom:10px;" border="1"  cellspacing="1" cellpadding="1">
+																<thead>
+																	<tr style="background-color:#EBEBE5; text-align:center">
+																		<th scope="col"  style="padding:5px 27px 5px 25px;">Category</th>
+																		<th scope="col"style="padding:0 30px 0 30px;">Name</th>
+																		<th scope="col" style="padding:0 30px 0 30px;">CAS</th>
+																		<th scope="col" style="padding:0 30px 0 30px;">Mass</th>
+																		<th scope="col" style="padding:0 30px 0 30px;">UOM</th>
+																	</tr>
+																</thead>
+																<tbody style="background-color:#fff;">	
+																	<tr>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																		<td>&nbsp;</td>
+																	</tr>
+																</tbody>	
+															</table>
+														
+														
+														
+														
+													</fieldset>
+													
+													
+												</td>
+											</tr> <tbody>
+										</table>
+									</div>
+									<div id="tab6">
+										<table style="width:600px"  border="1"  cellspacing="1" cellpadding="1" >
+											<thead>
+												<th style="text-align:center;background-color:#ccc; padding:10px">Legal Declaration </th>
+											</thead>
+											<tbody>
+												<tr style="background-color:#fff">
+												
+													<td class = "select">&nbsp;&nbsp; Declaration Type* &nbsp;
+																	   <select class="input1">        
+																			<option value="b">&nbsp </option>
+																			<option value="true">.............&nbsp&nbsp</option>
+																			<option value="saab"> &nbsp&nbsp</option>
+																	   </select>
+													<input type="checkbox" style="margin-left:80px"/>&nbsp; Supplier Acceptance</td>
+												</tr>
+												<tr>
+												<td><textarea rows="6" cols="130" name="comment" >
+													</textarea></td>
+												</tr>
+											</tbody>
+										</table>
+									
+									
+									</div>
+									<div id="tab8">
+									<button class="btn" data-toggle="tooltip" title="Refresh Declaration" style="background-color:#EBEBE5; border:1px solid #ccc ; border-radious:5px;margin-left:370px;margin-top:-15px;background-image: url(icons/recycle27.png);background-repeat: no-repeat;background-position: center;padding:20px 30px 20px 30px;" > 
+											</button>
+											
+									<table style="margin-left:-60px;  text-align:left" >
+										<tbody>
+											<tr>
+												<td>
+													<fieldset class="fieldset10">
+														<legend><b>Declarations</b></legend>
+															<table border="1" style="float:right;margin-right:10px;margin-bottom:20px;width:170px; text-align:center">
+																<thead style="text-align:center">
+																	<th>&nbsp;&nbsp; Declarations</th>
+																</thead>
+																<tbody style="background-color:#fff">
+																	<tr>
+																		<td>Intel&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																	<tr>
+																		<td>&nbsp;&nbsp;&nbsp </td>
+																	</tr>
+																</tbody>
+															</table>
+													</fieldset>
+												</td>
+												<td style="margin-left:-30px ;text-align:left">
+												<fieldset class="fieldset11">
+													<legend><b>Issues</b></legend>
+												</fieldset>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
 
 <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
 
@@ -361,7 +1171,1815 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-	</div>
- 
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/locales/bootstrap-datetimepicker.in.js" charset="UTF-8"></script>
+<script type="text/javascript">
+$('.form_date').datetimepicker({
+        language:  'in',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });	
+</script>
+						
+
+							
+						<div class="modal fade" id="Export" role="dialog">
+									<div class="modal-dialog" style="width:1100px">
+									
+									  <!-- Modal content-->
+									  <div class="modal-content">
+										<div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal">&times;</button>
+										  <h4 class="modal-title">Export Declaration</h4>
+										</div>
+										<div class="modal-body">
+										  <table border="1" style="width:1065px">
+											<thead>
+												<tr>
+													<th style="padding:15px 55px 15px 55px;text-align:center">Choose Class</th>
+													<th style="text-align:center">Declaration Name</th>
+													<th style="text-align:center">Status</th>
+													<th style="text-align:center">Destination Email</th>
+													<th style="text-align:center">File Type</th>
+													<th style="text-align:center">File Name</th>
+												</tr>
+												<tr>
+													<td  style="width:100px" data-target="#validation" data-toggle="modal"><select> 
+														  <option value="">&nbsp </option>
+														  <option value="1752A-CLASS A" ><span data-target="#validation" data-toggle="modal">1752A-CLASS A</span></option>
+														  <option value="1752A-CLASS C" data-target=".validation" data-toggle="modal">1752A-CLASS C</option>
+														  <option value="1752A-CLASS D" data-target="#validation" data-toggle="modal">1752A-CLASS D</option>
+														  <option value="1752A-CLASS A,CLASS C" href="#validation" data-toggle="modal">1752A-CLASS A,CLASS C</option>
+														  <option value="1752A-CLASS A,CLASS D" href="#validation" data-toggle="modal">1752A-CLASS A,CLASS D</option>
+														</select> </td>
+													<td  style="width:190px">&nbsp </td>
+													<td  style="width:120px">&nbsp </td>
+													<td  style="width:150px">&nbsp </td>
+													<td  style="width:95px"><select>
+													  <option value="">&nbsp</option>
+													  <option value="Zip">Zip</option>
+													  <option value="nozip">No Zip</option>
+													  <option value="zipandxml">Zip and XML</option>
+													</select></td>
+													<td>&nbsp </td>
+												</tr>
+
+											</thead>
+											<tbody>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+																<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+																<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+											</tbody>
+										  <table>
+										 
+										</div>
+										 <div>
+										  <table style="width:800px ;margin-top:15px">
+											<tr>
+												<td><input type="checkbox" name="" value=""> <br><input type="checkbox" name="sendmail" value="sendmail">&nbsp;&nbsp; Send Mail </td>
+												<td> <input id="lefile" type="file" style="display:none; ">
+													<div class="input-append">
+													<input id="photoCover"  type="text">
+													<a class="btn btn-default" style="padding-top:3px" onclick="$('input[id=lefile]').click();">...</a>
+													</div>
+													 
+													<script type="text/javascript">
+													$('input[id=lefile]').change(function() {
+													$('#photoCover').val($(this).val());
+													});
+													</script></td>
+												
+											</tr>
+
+										  </table>
+										  </div>
+										<div class="modal-footer">
+											<table style="text-align:center; margin-left:200px"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
+										
+										</div>
+									  </div>
+									  
+									</div>
+						</div>
+						
+								<div class="modal validation" id="validation" style="margin-top:40px;margin-left:-75px;padding: 0px 25px 0px 25px">
+									<div class="modal-dialog" >
+									  <div class="modal-content" style="background-color: #EBEBE5;width:600px; height:520px">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">Validation</h4>
+										</div><div class="container"></div>
+										<div class="modal-body">
+										<table style="margin:5px;background-color: #fff;width:550px; height:350px" border="1">
+											<tr><td style="width:400px;height:300px;">&nbsp;</td></tr>
+											<!-- <tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+										 --> 
+											</tr>
+										</table>
+										</div>
+										<div class="modal-footer">
+													<table style="text-align:center; margin-left:130px;">
+													<tr>
+													<td style="padding:0px 65px 0px 40px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td>
+													<td><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Save</button></td>
+													</tr>
+													</table>
+												
+												</div>
+									  </div>
+									</div>
+								</div>
+						
+								<div class="modal" id="addProduct" style="margin-top:100px;">
+									<div class="modal-dialog">
+									  <div class="modal-content">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">Add New Product</h4>
+										</div><div class="container"></div>
+										<div class="modal-body">
+										 Enter Requester Item Number: <input type="text" class="input2" style="margin:6px"/>
+										</div>
+										<div class="modal-footer">
+													<table style="text-align:center; margin-left:0px;"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
+												
+												</div>
+									  </div>
+									</div>
+								</div>
+								
+							<div class="modal fade" id="materialDashbord" role="dialog">
+									<div class="modal-dialog" style="width:1300px">
+									
+									  <!-- Modal content-->
+									  <div class="modal-content">
+										<div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal">&times;</button>
+										  <h4 class="modal-title">Export Declaration</h4>
+										</div>
+										<div class="modal-body">
+										  <table border="1" style="width:2000px;">
+											<thead>
+												<tr>
+													<th style="text-align:center; width:140px; height:40px">Product tag</th>
+													<th style="text-align:center;width:140px">Product Number</th>
+													<th style="text-align:center;width:140px">Product Name</th>
+													<th style="text-align:center;width:140px">Sub-Product Level</th>
+													<th style="text-align:center;width:180px">Sub-Product Number</th>
+													<th style="text-align:center;width:180px">Sub-Product Name</th>
+													<th style="text-align:center;width:180px">Number of Instances</th>
+													<th style="text-align:center;width:180px">Material Name</th>
+													<th style="text-align:center;width:140px">Substance Category</th>
+													<th style="text-align:center;width:140px">Substance Name</th>
+													<th style="text-align:center;width:110px">CAS </th>
+													<th style="text-align:center;width:100px">MAS</th>
+													<th style="text-align:center;width:130px">UOM</th>
+													<th style="text-align:center;width:140px">Concentration(%)</th>
+													<th style="text-align:center;width:130px">Exemption ID </th>
+													<th style="text-align:center;width:150px">Supporting Doc</th>
+													
+												</tr>
+
+											</thead>
+											<tbody>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+											</tbody>
+										  <table>
+										 
+										</div>
+										 <div>
+										<div class="modal-footer">
+											<table style="text-align:center; margin-left:400px"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:200px; background-color:#EBEBE5" class="btn btn-default" >Save To Excel</button></td><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Close</button></td></tr></table>
+										
+										</div>
+									  </div>
+									  
+									</div>
+								</div>
+							</div>			
+
+							<div class="modal fade" id="materialDashbord1" role="dialog">
+									<div class="modal-dialog" style="width:1300px">
+									
+									  <!-- Modal content-->
+									  <div class="modal-content">
+										<div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal">&times;</button>
+										  <h4 class="modal-title">Export Declaration</h4>
+										</div>
+										<div class="modal-body">
+										  <table border="1" style="width:2000px;">
+											<thead>
+												<tr>
+													
+													<th style="text-align:center;width:140px;">Product Number</th>
+													<th style="text-align:center;width:140px">Product Name</th>
+													<th style="text-align:center;width:140px">Sub-Product Level</th>
+													<th style="text-align:center;width:180px">Sub-Product Number</th>
+													<th style="text-align:center;width:180px">Sub-Product Name</th>
+													<th style="text-align:center;width:180px">Number of Instances</th>
+													<th style="text-align:center;width:180px">Material Name</th>
+													<th style="text-align:center;width:140px">Substance Category</th>
+													<th style="text-align:center;width:140px">Substance Name</th>
+													<th style="text-align:center;width:110px">CAS </th>
+													<th style="text-align:center;width:100px">MAS</th>
+													<th style="text-align:center;width:130px">UOM</th>
+													<th style="text-align:center;width:140px">Concentration(%)</th>
+													<th style="text-align:center;width:130px">Exemption ID </th>
+													<th style="text-align:center;width:150px">Supporting Doc</th>
+													
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													
+												</tr>
+											</tbody>
+										  <table>
+										 
+										</div>
+										 <div>
+										<div class="modal-footer">
+											<table style="text-align:center; margin-left:400px"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:200px; background-color:#EBEBE5" class="btn btn-default" >Save To Excel</button></td><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Close</button></td></tr></table>
+										
+										</div>
+									  </div>
+									  
+									</div>
+								</div>
+							</div>
+							
+							<div class="modal fade" id="materialDashbord2" role="dialog">
+									<div class="modal-dialog" style="width:1300px">
+									
+									  <!-- Modal content-->
+									  <div class="modal-content">
+										<div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal">&times;</button>
+										  <h4 class="modal-title">Export Declaration</h4>
+										</div>
+										<div class="modal-body">
+										  <table border="1" style="width:1700px;">
+											<thead>
+												<tr>
+													<th style="text-align:center;width:140px">Sub-Product Level</th>
+													<th style="text-align:center;width:180px">Sub-Product Number</th>
+													<th style="text-align:center;width:180px">Sub-Product Name</th>
+													<th style="text-align:center;width:180px">Material Name</th>
+													<th style="text-align:center;width:140px">Substance Category</th>
+													<th style="text-align:center;width:140px">Substance Name</th>
+													<th style="text-align:center;width:110px">CAS </th>
+													<th style="text-align:center;width:100px">MAS</th>
+													<th style="text-align:center;width:130px">UOM</th>
+													<th style="text-align:center;width:140px">Concentration(%)</th>
+													<th style="text-align:center;width:130px">Exemption ID </th>
+													<th style="text-align:center;width:150px">Supporting Doc</th>
+													
+												</tr>
+
+											</thead>
+											<tbody>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+												<tr>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+													<td>&nbsp </td>
+												</tr>
+											</tbody>
+										  <table>
+										 
+										</div>
+										 <div>
+										<div class="modal-footer">
+											<table style="text-align:center; margin-left:400px"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:200px; background-color:#EBEBE5" class="btn btn-default" >Save To Excel</button></td><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Close</button></td></tr></table>
+										
+										</div>
+									  </div>
+									  
+									</div>
+								</div>
+							</div>
+							
+								<div class="modal" id="addSubProduct" style="margin-top:100px;padding: 0px 25px 0px 25px">
+									<div class="modal-dialog">
+									  <div class="modal-content">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">Add New Product</h4>
+										</div><div class="container"></div>
+										<div class="modal-body">
+										<table style="margin-left:50px"><tr>
+										 <td style="text-align:right">Item Number: </td><td><input type="text" class="input1" style="margin:6px"/></td></tr>
+										 <tr><td style="text-align:right">Item Name:</td><td> <input type="text" class="input1" style="margin:6px"/></td></tr>
+										 <tr><td style="text-align:right">Number of Instances: </td><td><input type="text" class="input1" style="margin:6px"/></td>
+										 </tr></table>
+										</div>
+										<div class="modal-footer">
+													<table style="text-align:center; margin-left:0px;"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
+												
+												</div>
+									  </div>
+									</div>
+								</div>
+								
+								<div class="modal" id="Saddress" >
+									<div class="modal-dialog" style="width:850px">
+									  <div class="modal-content" style="background-color: #EBEBE5;">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">Response Details</h4>
+										</div><div class="container"></div>
+										<div class="modal-body">
+											<table>
+												<tr>
+													<td>
+														<fieldset class="fieldset14 ">
+																<legend><b>Contact Info</b></legend>
+																  <table>
+																		 <tr>
+																			<td style="text-align:center">Address-Type</td>
+																			<td style="text-align:center">Address-Internal</td>
+																		 </tr>
+																		 <tr>
+																			<td ><input type="text" class="input2" name="n1" id="n1" style="margin:6px"/></td>
+																			<td><input type="text" class="input2" name="n3" id="n3" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:center">Address-Streat</td>
+																			<td style="text-align:center">Address-City</td>
+																		 </tr>
+																		 <tr>
+																			<td><input type="text" class="input2" name="n5" id="n5" style="margin:6px"/></td>
+																			<td><input type="text" class="input2" name="n7" id="n7" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:center">Address-State</td>
+																			<td style="text-align:center">Address-Country</td>
+																		 </tr>
+																		 <tr>
+																			<td><input type="text" class="input2" name="n9" id="n9" style="margin:6px"/></td>
+																			<td><input type="text" class="input2" name="n11" id="n11" style="margin:6px"/></td>
+																		 </tr>
+
+																  </table>
+																  <table>
+																		 <tr>															 <tr>
+																			<td style="text-align:center">Address-Zip</td>
+																		 </tr>
+																		 <tr>
+																			<td><input type="text" class="input2" name="n13" id="n13" style="margin:6px; padding-right:170px"/></td>
+																		 </tr>
+																  </table>
+														</fieldset>
+													</td>
+											
+														<td style="width:100px; text-align:center"><button class="btn" data-toggle="tooltip" title="Add Document" value="copy" onClick="copy();" style="background-color:#EBEBE5;  border-radious:5px;background-image: url(icons/copy26.png);background-repeat: no-repeat;background-position: center;padding:20px 20px 20px 20px;" > 
+															</button>
+														</td>
+													<td>
+														<fieldset class="fieldset14 ">
+																<legend><b>Authorizer Info</b></legend>
+																  <table>
+																		 <tr>
+																			<td style="text-align:center">Address-Type</td>
+																			<td style="text-align:center">Address-Internal</td>
+																		 </tr>
+																		 <tr>
+																			<td ><input type="text" name="n2" id="n2" class="input2" style="margin:6px"/></td>
+																			<td><input type="text" class="input2" name="n4" id="n4" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:center">Address-Streat</td>
+																			<td style="text-align:center">Address-City</td>
+																		 </tr>
+																		 <tr>
+																			<td><input type="text" class="input2" name="n6" id="n6" style="margin:6px"/></td>
+																			<td><input type="text" class="input2" name="n8" id="n8" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:center">Address-State</td>
+																			<td style="text-align:center">Address-Country</td>
+																		 </tr>
+																		 <tr>
+																			<td><input type="text" class="input2" name="n10" id="n10" style="margin:6px"/></td>
+																			<td><input type="text" class="input2" name="n12" id="n12" style="margin:6px"/></td>
+																		 </tr>
+																  </table>
+																   <table>
+																		 <tr>															 <tr>
+																			<td style="text-align:center">Address-Zip</td>
+																		 </tr>
+																		 <tr>
+																			<td><input type="text" class="input2" name="n14" id="n14" style="margin:6px; padding-right:170px"/></td>
+																		 </tr>
+																  </table>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div class="modal-footer">
+													<table style="text-align:center; margin-left:350px;"><tr><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Close</button></td></tr></table>
+												
+										</div>
+									  </div>
+									</div>
+								</div>
+								
+								<div class="modal" id="Adetails" style="margin-top:100px;padding: 0px 25px 0px 25px">
+									<div class="modal-dialog">
+									  <div class="modal-content" style="background-color: #EBEBE5;">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">Supplier Additional Details</h4>
+										</div><div class="container"></div>
+										<div class="modal-body">
+														<fieldset class="fieldset14 ">
+															<legend><b>Additional Details</b></legend>
+																  <table style="margin-left:20px; margin-top:-10px;margin-bottom:10px">
+																		 <tr>
+																			<td style="text-align:right; ">Contact Details</td>
+																			<td ><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right">Response Document ID</td>
+																			<td ><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right">Representative Title	</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right">Supplier Comments</td>
+																			<td><textarea rows="3" cols="24" name="comment" form="usrform" style="margin-left:6px;"> </textarea></td>
+																		 </tr>																		 
+																  </table>
+																  
+														</fieldset>
+										</div>
+										<div class="modal-footer">
+													<table style="text-align:center; margin-left:140px;"><tr><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Close</button></td></tr></table>
+												
+										</div>
+									  </div>
+									</div>
+								</div>
+								
+								<div class="modal" id="Saddress1" style="margin-top:100px;padding: 0px 25px 0px 25px">
+									<div class="modal-dialog">
+									  <div class="modal-content" style="background-color: #EBEBE5;">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">Requester Details</h4>
+										</div><div class="container"></div>
+										<div class="modal-body">
+												<table style="margin-left:20px">
+																		 <tr>
+																			<td style="text-align:center">Address-Type</td>
+																			<td style="text-align:center">Address-Internal</td>
+																		 </tr>
+																		 <tr>
+																			<td ><input type="text" class="input2" style="margin:6px"/></td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:center">Address-Streat</td>
+																			<td style="text-align:center">Address-City</td>
+																		 </tr>
+																		 <tr>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:center">Address-State</td>
+																			<td style="text-align:center">Address-Country</td>
+																		 </tr>
+																		 <tr>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+												</table>
+												<table style="margin-left:20px">
+																		 <tr>															 <tr>
+																			<td style="text-align:center">Address-Zip</td>
+																		 </tr>
+																		 <tr>
+																			<td><input type="text" class="input2" style="margin:6px; padding-right:170px"/></td>
+																		 </tr>
+												</table>
+										</div>
+										<div class="modal-footer">
+													<table style="text-align:center; margin-left:140px;"><tr><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Close</button></td></tr></table>
+												
+										</div>
+									  </div>
+									</div>
+								</div>
+								
+								<div class="modal" id="Adetails1" style="margin-top:100px;padding: 0px 25px 0px 25px">
+									<div class="modal-dialog">
+									  <div class="modal-content" style="background-color: #EBEBE5;">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">Requester Additional Details</h4>
+										</div><div class="container"></div>
+										<div class="modal-body">
+										<fieldset class="fieldset14 ">
+															<legend><b>Additional Details</b></legend>
+																  <table style="margin-left:20px; margin-top:-10px;margin-bottom:10px">
+																		 <tr>
+																			<td style="text-align:right; ">Contact Title</td>
+																			<td ><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right">My Supplier ID</td>
+																			<td ><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right">Request Document ID	</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		  <tr>
+																			<td style="text-align:right">Company Unique ID	</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right">Requester Comment</td>
+																			<td><textarea rows="3" cols="24" name="comment" form="usrform" style="margin-left:6px;"> </textarea></td>
+																		 </tr>																		 
+																  </table>
+																  <input type="checkbox"style="margin:6px; margin-left:20px"/> Supplier Provides Mfr Item Version Manufacturing...
+														</fieldset>
+										</div>
+										<div class="modal-footer">
+													<table style="text-align:center; margin-left:130px;"><tr><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Close</button></td></tr></table>
+												
+										</div>
+									  </div>
+									</div>
+								</div>
+								
+								<div class="modal" id="excemption" style="margin-top:80px;padding: 0px 25px 0px 25px">
+									<div class="modal-dialog" >
+									  <div class="modal-content" style="background-color: #EBEBE5;">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">Exemption List</h4>
+										</div><div class="container"></div>
+										<div class="modal-body">
+										<table style="margin:5px;background-color: #fff;" border="1">
+											<tr><th style="width:400px; padding:15px">Exemption</th></tr>
+											<tr><td style="width:400px;height:300px;">&nbsp;
+											<table style="margin-top:-150px; margin-left:25px;overflow-x: initial !important;overflow-x: auto;">
+											<tr>
+												<td> <input type="checkbox"> 1.Mercury in compact flurecent lamps.....</td>
+											</tr>
+											<tr>
+												<td> <input type="checkbox"> 1.Mercury in compact flurecent lamps.....</td>
+											</tr>
+											<tr>
+												<td> <input type="checkbox"> 1.Mercury in compact flurecent lamps.....</td>
+											</tr>
+											<tr>
+												<td> <input type="checkbox"> 1.Mercury in compact flurecent lamps.....</td>
+											</tr>
+											<tr>
+												<td> <input type="checkbox"> 1.Mercury in compact flurecent lamps.....</td>
+											</tr>
+											<tr>
+												<td> <input type="checkbox"> 1.Mercury in compact flurecent lamps Mercury.....</td>
+											</tr>
+
+											</table>
+											
+											</td></tr>
+											<!-- <tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+											<tr><td style="width:400px">&nbsp;</td></tr>
+										 --> 
+											</tr>
+										</table>
+										</div>
+										<div class="modal-footer">
+													<table style="text-align:center;; margin-left:60px;"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td></tr></table>
+												
+												</div>
+									  </div>
+									</div>
+								</div>
+						
+						
+								<div class="modal" id="about" style="margin-top:30px;padding: 0px 25px 0px 25px; ">
+									<div class="modal-dialog" >
+									  <div class="modal-content" style="background-color: #EBEBE5;width:700px; margin-left:-150px">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">About </h2>
+										</div><div class="container"></div>
+										<div class="modal-body">
+											<div class="col-md-12" style=" background-color:#fff;margin-top:-50px">
+											<div class="col-md-12">
+											<table style="color:black;font-family: Times New Roman, Times, serif;"><tr><td style="width:65%; margin-bottom:-25px"><h1><b>Material Diclaration Tool<b> </h1></td>
+											<td style="text-align:right"><img class="img-responsive"  src="images/PLMLOGIX_min.png" alt="plm Logo" style="margin-top:25px;width:300px;height:75px; float:right"	 / ></td></tr></table>
+											<div class="col-md-12" style="margin-top:-20px">
+											<hr>
+											<table style="margin-top:-15px; margin-left:25px">
+											<tr><td style="text-align:right;color:black"><b>MDT Version:</td><td style="width:25px"></td><td>0.3.9_Plus_beta</td></tr>
+											<tr><td style="text-align:right;color:black"><b>Release Date:</td><td></td><td>14-Oct-2015</td></tr>
+											<tr><td style="text-align:right;color:black"><b>JRE Version:</td><td></td><td>1.8.0_25</td></tr>
+											<tr><td style="text-align:right;color:black"><b>JVM Available Memory:</td><td></td><td>15.5625Mb</td></tr>
+											<tr><td style="text-align:right;color:black"><b>JVM Free Memory:</td><td></td><td>10.347358703613281Mb</td></tr>
+											
+											</table>
+											
+											</div >
+											<div class="col-md-12" style="margin-top:-10px">
+											<hr>
+											<p style="font-size: 100%;color:black">Warning: This Computer program is protected by copyright law and international treaties. Unauthorized reproduction
+												or distribution of this program, or any portion of it, may result in severe civil and criminal penalties, and will be
+												prosecuted to the maximum extent possible under the law. see License.txt for the spacific language governing
+												permissions and limitations under License.<br>
+												©2012 PLM Logix <br>
+												All Rights Reserved.<br></p>
+												<p><h3 style="color:black;margin-top:-5px">Contact Us at: mdt@olmlogix.com</h3><br></p>
+												<p><h3 style="color:black ; margin-top:-25px">PLM Logix extends a limited use license to:</h3><br></p>
+												<p><h1 style="color:black;font-family: Times New Roman, Times, serif; margin-top:-25px"><b>Material Diclaration Tool<b> </h1></p>
+											</p>
+											<p style="font-size: 70%;color:black">Unless required by application law or aggred to in writing, this software is distributed on an "AS IS"
+												BASIS, WITHOUT WARRANTIES OR CONDITIONS ANY KIND, either expressed or implied. please
+												review License.txt for the spacific language governing
+												permissions and limitations under License.<br>
+											</p>
+											<p style="font-size:70%;color:black; > If you do not agree to the lisence teems please click Cancel in the next popup window and cease any further use of software.
+											</p>
+											<p style="font-size: 70%;color:black">This Lisence will expire in thirty(30) days from its activation.<br> Please visit http://mdtapp.com for renewal options.</p>
+											</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+													<table style="text-align:center;; margin-left:200px;margin-top:25px"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td></tr></table>
+												
+												</div>
+									  </div>
+									</div>
+								</div>
+								<!-- For Configuration dialog box -->
+								    <div class="modal fade config"  role="dialog" >
+										<div class="modal-dialog" style="width:950px ;margin-top:-5px;overflow:auto;">
+										
+										  
+										  <div class="modal-content" style="background-color:#EBEBE5">
+											<div class="modal-header">
+											  <button type="button" class="close" data-dismiss="modal">&times;</button>
+											  <h4 class="modal-title">Configuration</h4>
+											</div>
+											<div class="modal-body">
+											  <table style="width:900px ; margin-top:-15px; ">
+													<tr>
+														<td>
+															<fieldset class="fieldset13">
+																<legend><b>System Configuration</b></legend>
+																  <table style="margin-left:35px; margin-top:-25px">
+																		 <tr>
+																			<td style="text-align:right;">Legal Acceptance Display:</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="text-align:right;">Force Response Date:</td>
+																			<td>
+																			<select style="width:153px; margin-left:6px;  padding-bottom:5px; margin-bottom:7px;"> 
+																			  <option value="">&nbsp</option>
+																			  <option value="1752A-CLASS A">true</option>
+																			  <option value="1752A-CLASS C">false</option>
+																			</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Hide Admin Tab:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:7px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																			
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Default Language Set:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px;padding-bottom:5px; margin-bottom:7px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Default Language:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; "> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">EN</option>
+																				 
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">System Deviation:</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">System Legal Text:</td>
+																			<td><textarea rows="3" cols="24" name="comment" form="usrform" style="margin-left:6px;"> </textarea></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Validate Schema:</td>
+																			<td>
+																				<select style="width:100px; margin-left:6px; padding-bottom:5px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select>
+																			</td>
+																		 </tr>
+																	  </table>
+																	  *Warning: Settings this variable "True" May significantly increase the time to improve the XML File.
+															<fieldset class="fieldset13" style="width:400px; margin:8px">
+																<legend><b>Email Configuration</b></legend>
+																  <table style="margin-left:77px; margin-top:-20px">
+																		 <tr>
+																			<td style="text-align:right;">Export To Email:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="text-align:right;">Email Recepient:</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Email Subject:</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																			
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Email Export:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:7px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Zip</option>
+																				  <option value="NoZip">No Zip</option>
+																				  <option value="NoZip2">Zip and XML</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																	  </table>
+															</fieldset>
+															</fieldset>
+														</td>
+														<td>
+															<fieldset class="fieldset13" style="margin-top:-58px">
+																<legend><b>Validation Configuration</b></legend>
+																  <table style="margin-left:30px">
+																		 <tr>
+																			<td style="text-align:right;">Homogenious Materilal Document:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Warning</option>
+																				  <option value="NoZip">Error</option>
+																				  <option value="NoZip2">ignore</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="text-align:right;">Product/SubProduct Document:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Warning</option>
+																				  <option value="NoZip">Error</option>
+																				  <option value="NoZip2">ignore</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Class A Measured Mass:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																			
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Class C Measured Mass:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Export Validation:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px;padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Warning</option>
+																				  <option value="NoZip">Error</option>
+																				  <option value="NoZip2">ignore</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																	  </table>
+															</fieldset><br>
+															<fieldset class="fieldset13">
+																<legend><b>Export Configuration</b></legend>
+																  <table style="margin-left:55px">
+																		 <tr>
+																			<td style="text-align:right;">Remove Spaces in output File:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="text-align:right;">File Name Delimeter:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">-</option>
+																				  <option value="1752A-CLASS C">-</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Export Substance:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Mass</option>
+																				  <option value="NoZip">Concentration</option>
+																				  <option value="NoZip2">Both</option>
+																				</select> 
+																			</td>
+																			
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Time Stamp:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">File Name Limit:</td>
+																			<td><input type="text" class="input2" style="margin:6px; margin-bottom:20px"/></td>
+																		 </tr>
+																	  </table>
+															</fieldset>
+														</td>
+														
+													</tr>
+										      <table>
+											</div>
+												<div class="modal-footer">
+													<table style="text-align:center; margin-left:200px;margin-top:-20px "><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px" class="btn btn-default" >Ok</button></td><td><button type="button" style="width:100px" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
+												
+												</div>
+										  </div>
+										  
+										</div>
+									</div>
+								  
+<!-- 								    <!-- For Admin dialog box -->
+								    <div class="modal fade Admin"  role="dialog">
+										<div class="modal-dialog" style="width:950px">
+										
+										  
+										  <div class="modal-content">
+											<div class="modal-header">
+											  <button type="button" class="close" data-dismiss="modal">&times;</button>
+											  <h4 class="modal-title">Admin</h4>
+											</div>
+											<div class="modal-body">
+											  <table style="width:900px">
+													<tr>
+														<td>
+															<fieldset class="fieldset12">
+																<legend><b>Email Functionality</b></legend>
+																  <table>
+																		 <tr>
+																			<td style="text-align:right;">HostName:</td>
+																			<td><input type="text" class="input3" style="margin:6px"/></td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="text-align:right;">User Name:</td>
+																			<td><input type="text" class="input3" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Password:</td>
+																			<td><input type="text" class="input3" style="margin:6px"/></td>
+																			<td><input type="checkbox" name="sendmail" value="sendmail">Save Password </td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Port:</td>
+																			<td><input type="text" class="input3" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Protocol:</td>
+																			<td><input type="text" class="input3" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td>&nbsp;</td>
+																			<td style="text-align:center"><button type="button" style="width:100px"class="btn btn-default" >Save</button></td>
+																		 </tr>
+																	  </table>
+															</fieldset>
+														</td>
+														<td>
+															<fieldset class="fieldset12">
+																<legend><b>Import Functionality</b></legend>
+																    <table>
+																		 <tr>
+																			<td style="padding:0px 65px 0px 65px; margin-top:25px "><button type="button" style="width:200px" class="btn btn-default"  >Import Substance List</button><br>&nbsp;</td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="padding:0px 65px 0px 65px; margin-top:25px "><button type="button" style="width:200px" class="btn btn-default" >Import Exemption</button><br>&nbsp;</td>
+																		 </tr>
+																		 <tr>
+																			<td style="padding:0px 65px 0px 65px; margin: 30px 10px 30px 10px "><button type="button" style="width:200px" class="btn btn-default">Import Query List</button><br>&nbsp;</td>
+																		 </tr>
+																		 <tr>
+																			<td style="padding:0px 65px 0px 65px; margin: 30px 10px 30px 10px "><button type="button" style="width:200px" data-toggle="modal" href=".config" class="btn btn-default" data-dismiss="modal" >Configure Properties</button><br>&nbsp;</td>
+																		 </tr>
+																	</table>
+															</fieldset>
+														</td>
+														
+													</tr>
+										      <table>
+											</div>
+
+										  </div>
+										  
+										</div>
+									</div>
+									
+									
+									
+
+								
+									
+									
+  
+
 </body>
 </html>

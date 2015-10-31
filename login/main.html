@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 
 <script type="text/javascript" >
 
             $(document).ready(function(){
             $('#reg').click(function(){
-                $('#div1').hide('blind');
-                $('#div2').show('blind');
+                $('#div1').hide();
+                $('#div2').show();
                 
             });
            $('#lgn').click(function(){
-                $('#div2').hide('Drop');
-                $('#div1').show('Drop');
+                $('#div2').hide();
+                $('#div1').show();
             });
             });
 
@@ -26,8 +26,8 @@
 	<style>
 
 .login{
-margin-top:70px;
-background-color: #fff;
+margin-top:40px;
+background-color: #ccc;
 padding-top:05px;
 width: 400px;
 height: 300px;
@@ -35,8 +35,8 @@ padding-left : 50px;
 }
 
 .signup{
-margin-top:70px;
-background-color: #fff;
+margin-top:40px;
+background-color: #ccc;
 padding-top:05px;
 width: 400px;
 height:600px;
@@ -44,7 +44,7 @@ padding-left : 50px;
 }
 
 input[type="text"],[type="password"] {
-	background-color:#ccc;
+	background-color:#fff;
     width: 300px;
 	height: 30px
 
@@ -100,27 +100,27 @@ input[type="submit"] {
 			
 	<div class="col-xs-6 col-md-offset-3 col-md-4" >
 		<div class="col-md-8">
-		<form action="tabs/index.html" method="get">
+		<form action="index.html" method="get">
 		<div class="login" id="div1" style="border-radius:10px">
 <h3 ><strong> User Login</strong></h3>
 <p>User Name</p>
-<input type = "text" class="control-label" name ="Uname " id="inputEmail" placeholder ="User Name" required> <br><br>
+<input type = "text" class="control-label" name ="Uname " id="inputEmail" placeholder ="User Name" required /> <br><br>
 <p>Password</p>
-<input type = "password" class="control-label" name "password" id="inputPassword" placeholder = "Password" required><br><br>
+<input type = "password" class="control-label" name "password" id="inputPassword" placeholder = "Password" required  /><br><br>
 <input type ="submit" class="btn btn-primary" value="Login" id="lgn1">
-<input type ="submit" class="btn btn-primary" id="reg" value="Sign In"  >
+<input type ="submit" class="btn btn-primary" id="reg" value="Sign In" >
 			
 	</div>  </form>
 	<div class="signup" id="div2" style="border-radius:10px;">
 <h3 ><strong> User Registration</strong></h3>
 <p>User Name*</p>
-<input type = "text" class="control-label" name ="Uname " id="inputEmail" placeholder ="User Name" required> <br><br>
+<input type = "text" class="control-label" name ="Uname " id="inputEmail" placeholder ="User Name" required /> <br><br>
 <p>First Name</p>
 <input type = "text" class="control-label" name ="name " id="inputEmail" placeholder ="First Name"> <br><br>
 <p>Last Name</p>
 <input type = "text" class="control-label" name ="lname " id="inputEmail" placeholder ="Last Name"> <br><br>
 <p>Email*</p>
-<input type = "text" class="control-label" name ="lname " id="inputEmail" placeholder ="Email" required> <br><br>
+<input type = "text" class="control-label" name ="lname " id="inputEmail" placeholder ="Email" required /> <br><br>
 <p>Password*</p>
 <input type = "password" class="control-label" name "password" id="inputPassword" placeholder = "Password" required><br><br>
 <p>Confirm Password*</p>
@@ -137,7 +137,7 @@ input[type="submit"] {
 	
 	<footer style="margin-top:70px;">
 	<div class="container">
-	<div style="text-align:center;">
+	<div style="text-align:center; position:relative">
 	    Copyright © 2015 by PLM logix <br>
 			Contact us at: mdt@plmlogix.com
 	</div>
@@ -147,7 +147,7 @@ input[type="submit"] {
 		</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
