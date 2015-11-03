@@ -10,7 +10,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-2.1.4.min.js"></script>
 
-
+<!-- <script type="text/javascript" src="js/start.js"></script>  -->
 <script type="text/javascript" src="js/tab1shuffel.js"></script>
 <script type="text/javascript" src="js/numberValidation.js"></script> 
 <script type="text/javascript" src="js/test.js"></script> 
@@ -19,6 +19,7 @@
 @import url("css/style.css");
 @import url("css/navbar.css");
 </style>
+
 </head>
 
 <body>
@@ -128,7 +129,7 @@
 									</button>
 						</td>
 						<td>
-							<button class="btn" style="background-color:#EBEBE5;  border-radious:5px;background-image: url(icons/write21.png);background-repeat: no-repeat;background-position: left; padding:20px 30px 20px 30px;" > 
+							<button class="btn" href="#lang" data-toggle="modal" style="background-color:#EBEBE5;  border-radious:5px;background-image: url(icons/write21.png);background-repeat: no-repeat;background-position: left; padding:20px 30px 20px 30px;" > 
 									</button>
 						</td>
 						<td>
@@ -172,38 +173,38 @@
 											<legend><b>Supplier Information</b></legend>
 												<table>
 													 <tr>
-														<td>Supplier unique id<span class="red-star">*</span></td>
+														<td style="text-align:right">Supplier unique id<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 <tr>
-														<td>Contact Name<span class="red-star">*</span></td>
+														<td style="text-align:right">Contact Name<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 <tr>
-														<td>Contact Phone<span class="red-star">*</span></td>
+														<td style="text-align:right">Contact Phone<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 <tr>
-														<td>Contact Email<span class="red-star">*</span></td>
+														<td style="text-align:right">Contact Email<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 <tr>
-														<td>Authorized Representative<span class="red-star">*</span></td>
+														<td style="text-align:right">Authorized Representative<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 														<td><button class="btn" data-toggle="tooltip" title="Add Document" style="background-color:#EBEBE5;  border-radious:5px;background-image: url(icons/copy26.png);background-repeat: no-repeat;background-position: center;padding:20px 20px 20px 20px;" > 
 															</button>
 														</td>
 													 </tr>
 													 <tr>
-														<td>Representative Phone<span class="red-star">*</span></td>
+														<td style="text-align:right">Representative Phone<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 <tr>
-														<td>Representative Email<span class="red-star">*</span></td>
+														<td style="text-align:right">Representative Email<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 <tr>
-														<td> Response Date</td>
+														<td style="text-align:right"> Response Date</td>
 														<td>
 															
 															<span class="form-group" >
@@ -231,24 +232,24 @@
 											<legend><b>Requester Information</b></legend>
 											  <table>
 													 <tr>
-														<td>Company Name<span class="red-star">*</span></td>
+														<td style="text-align:right">Company Name<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 
 													 <tr>
-														<td>Contact Name<span class="red-star">*</span></td>
+														<td style="text-align:right">Contact Name<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 <tr>
-														<td>Contact Phone<span class="red-star">*</span></td>
+														<td style="text-align:right">Contact Phone<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 <tr>
-														<td>Contact Email<span class="red-star">*</span></td>
+														<td style="text-align:right">Contact Email<span class="red-star">*</span></td>
 														<td><input type="text" class="input1" style="margin:6px"/></td>
 													 </tr>
 													 <tr>
-														<td>Request Date</td>
+														<td style="text-align:right">Request Date</td>
 														<td>
 															<span class="form-group" >
 																<span class="input-group date form_date " data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
@@ -261,7 +262,7 @@
 														</td>
 													 </tr>
 													 <tr>
-														<td>Response by Date</td>
+														<td style="text-align:right">Response by Date</td>
 														<td>
 															
 															<span class="form-group" >
@@ -295,21 +296,21 @@
 											<legend><b>Product Information</b></legend>
 											<table style="margin-top:-30px"	>
 											 <tr>
-												<td>Request Item Number<span class="redstar">*</span></td>
+												<td style="text-align:right">Request Item Number<span class="redstar">*</span></td>
 												<td><input type="text" class="input1" style="margin:6px"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-												<td>manufacturing Site<span class="redstar">*</span></td>
+												<td style="text-align:right">manufacturing Site<span class="redstar">*</span></td>
 												<td><input type="text" class="input1"/></td>
 											 </tr>
 											 <tr>
-												<td>Request Item Name*</span></td>
+												<td style="text-align:right">Request Item Name*</span></td>
 												<td><input type="text" class="input1" style="margin:6px"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-												<td>Supplier/Mfr Item Version<span class="redstar">*</span></td>
+												<td style="text-align:right">Supplier/Mfr Item Version<span class="redstar">*</span></td>
 												<td><input type="text" class="input1"/></td>
 											 </tr>
 											 <tr>
-												<td>Supplier/Mfr Item Number</td>
+												<td style="text-align:right">Supplier/Mfr Item Number</td>
 												<td><input type="text" class="input1" style="margin:6px"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-												 <td>Effective Date<span class="redstar">*</span></td>
+												 <td style="text-align:right">Effective Date<span class="redstar">*</span></td>
 												<!-- <td><input type="date" class="input1"/></td> -->
 												<td>
 													<span class="form-group" >
@@ -323,28 +324,28 @@
 												</td>
 											 </tr>
 											 <tr>
-												<td>Supplier/Mfr Item Name &nbsp;<span class="redstar">*</span></td>
+												<td style="text-align:right">Supplier/Mfr Item Name &nbsp;<span class="redstar">*</span></td>
 												<td><input type="text" class="input1" style="margin:6px"/></td>  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-												<td>Devialion<span class="redstar">*</span></td>
+												<td style="text-align:right">Devialion<span class="redstar">*</span></td>
 												<td><input type="text" class="input1"/></td>
 											 </tr>
 											 <tr>
-												<td>Unit of Measure<span class="redstar">*</span></td>
+												<td style="text-align:right">Unit of Measure<span class="redstar">*</span></td>
 												<td><input type="text" class="input1" style="margin:6px"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-												<td>Mass Difference<span class="redstar">*</span></td>
+												<td style="text-align:right">Mass Difference<span class="redstar">*</span></td>
 												<td><input type="text" class="input1"/></td>
 											 </tr>
 											 <tr>
-												<td>measured Mass<span class="redstar">*</span></td>
+												<td style="text-align:right">measured Mass<span class="redstar">*</span></td>
 												<td><input type="text" class="input1"style="margin:6px"/></td>
 											 </tr>
 											 <tr>
-												<td>Calculated Mass<span class="redstar">*</span></td>
+												<td style="text-align:right">Calculated Mass<span class="redstar">*</span></td>
 												<td><input type="text" class="input1" style="margin:6px"/></td>
 											 </tr>
 											 
 											 <tr>
-												<td>Unit Type<span class="red-star">*</span></td>
+												<td style="text-align:right">Unit Type<span class="red-star">*</span></td>
 												<td><input type="text" class="input1" style="margin:6px"/></td>
 											 </tr>
 											</table>
@@ -743,22 +744,22 @@
 														<legend	><b>Material Info</b></legend>
 														<table style="margin-left:20px;margin-top:-15px;">
 															 <tr>
-																<td> </td>
+																<td></td><td></td>
 																<td><input type="checkbox" id="chkbox" name="chkbox" onchange="enableDisable() ,enableDisable1(), enableDisable2(), enableDisable3();" />&nbsp; Declare substances in concentration(%)</td>
 															 </tr>
 															 <tr>
-																<td>material Name<span class="red-star" >*</span></td>
+																<td style="text-align:right">material Name</td><td>*</td>
 																<td><input type="text" class="input1" style=" margin-top:8px; margin-bottom:8px" /></td>
 															 </tr>
 															 <tr>
 																
-																<td>Mass <span id="star">* &nbsp;</span></td>										
+																<td style="text-align:right">Mass </td>	<td><span id="star">*</span></td>									
 																<td><input type="text" onkeypress = "return numericOnly(this);"  ondrop = "return false;" id="txtBox" class="input2" style=" margin-top:8px; margin-bottom:8px; background-color:#fff " disabled="disabled" /></td>
 																
 															
 															 </tr>
 															 <tr>
-																<td>Unit of Measure <span class="red-star">*&nbsp;</span></td>
+																<td style="text-align:right">Unit of Measure </td><td>*</td>
 																<td class = "select" style=" margin-top:8px">
 																	   <select class="input1">        
 																			<option value="b">&nbsp;&nbsp  </option>
@@ -877,10 +878,10 @@
 													<fieldset class="fieldset8">
 														<legend> <b>substances Info</b>
 														</legend>
-															<table style="width:488; margin-left:10px; margin-top:25px; text-align:left">
+															<table style="width:488; margin-left:10px; margin-top:25px; text-align:left" >
 															<tbody>
 															<tr >
-																<td> Substance Category <span class="redstar">*</span></td>
+																<td style="text-align:right"> Substance Category </td><td>*</td>
 																<td class = "select" >
 																	   <select class="input1" style=" margin:8px;width: 100px;">        
 																			<option value="b">&nbsp </option>
@@ -889,11 +890,12 @@
 																	   </select>
 																</td>
 																<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-																<td>Mass<span id="star2">*</span></td>
+																<td style="text-align:right">Mass</td><td><span id="star2">*</span></td>
 																<td><input type="text" onkeypress = "return numericOnly(this);"  ondrop = "return false;" id="txtBox2" style="width: 100px;"  class="input1"/></td>
 															 </tr>
 															 <tr>
-																<td>Substance<span class="redstar">*</span></td>
+																<td style="text-align:right">Substance</td>
+																<td>*</td>
 																<td class = "select" >
 																	   <select class="input1" style=" margin:8px;width: 100px">        
 																			<option value="b">&nbsp </option>
@@ -902,9 +904,10 @@
 																	   </select>
 																</td>
 																</td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-																<td>Unit Of Measure<span id="star3">*</span></td>
+																<td style="text-align:right">Unit Of Measure</td>
+																<td><span id="star2">*</span></td>
 																<td class = "select"  >
-																	   <select class="input1" id="txtBox3" style="width:90px;float:right">    
+																	   <select class="input1" id="txtBox3" style="width:90px;float:left">    
 																			<option value="b">&nbsp;&nbsp  </option>
 																			<option value="b">&nbsp;&nbsp g </option>
 																			<option value="true">&nbsp&nbsp mg</option>
@@ -913,15 +916,19 @@
 																</td>
 															 </tr>
 															 <tr style="padding-bottom: 5em;">
-																<td>CAS<span class="redstar">*</span></td>
+																<td style="text-align:right">CAS</td>
+																<td>*</td>
 																<td><input type="text" style="width: 100px; margin:8px" class="input1"/></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-																<td>Concentration(%)<span id="star1">*</span></td>
-																<td><input type="text" onkeypress = "return numericOnly(this);"  ondrop = "return false;" style="width: 90px; float:right; background-color:#fff" class="input1" id="txtBox1" disabled="disabled" /></td>
+																<td style="text-align:right">Concentration(%)</td>
+																<td><span id="star1">*</span></td>
+																<td><input type="text" onkeypress = "return numericOnly(this);"  ondrop = "return false;" style="width: 90px; float:left; background-color:#fff" class="input1" id="txtBox1" disabled="disabled" /></td>
 															 </tr>
 															 <tr style="padding-bottom: 5em;">
 																<td></td>
+																<td></td>
 																<td></td>  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-																<td >Exemption Type <span class="redstar">*</span></td>
+																<td style="text-align:right">Exemption Type </td>
+																<td>*</td>
 																<td class = "select" >
 																	   <select style="width:100px;">        
 																			<option value="b">&nbsp </option>
@@ -932,9 +939,11 @@
 															 </tr>
 															 <tr style="padding-bottom: 5em;">
 																<td></td>
+																<td></td>
 																<td></td> <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-																<td>Exemption ID<span class="redstar">*</span></td>
-																<td><input type="text" style="width: 100px;margin-top:8px" class="input1"/></td>
+																<td style="text-align:right">Exemption ID</td>
+																<td>*</td>	
+																<td><input type="text" style="width: 100px;margin-top:8px" class="input1" href="#excemption" data-toggle="modal"/></td>
 															 </tr>
 															</tbody>
 															</table>
@@ -1187,9 +1196,366 @@ $('.form_date').datetimepicker({
 		forceParse: 0
     });	
 </script>
-						
+<script type="text/javascript"> 
+//below javascript is used for Disabling right-click on HTML page
+document.oncontextmenu=new Function("return false");//Disabling right-click
+//below javascript is used for Disabling text selection in web page
+document.onselectstart=new Function ("return false"); //Disabling text selection in web page
+if (window.sidebar){
+document.onmousedown=new Function("return false"); 
+document.onclick=new Function("return true") ; 
+//Disable Copy into HTML form using Javascript 
+document.oncopy=new Function("return false"); 
+</script>
 
-							
+                <!-- All Maodals Start from Here -->
+						
+						 <div class="modal lang" id="lang" style="margin-top:100px;padding: 0px 25px 0px 25px" >
+									<div class="modal-dialog">
+									    <div class="modal-content">
+												<div class="modal-header">
+												  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+												  <h4 class="modal-title">Select Language</h4>
+												</div><div class="container"></div>
+												<div class="modal-body">
+													<table style="margin-left:50px"><tr>
+													 <td style="text-align:right">Select Language: </td>
+													 <td>
+														<select style="width:153px; margin-left:6px; padding-bottom:5px;"> 
+														<option value="">&nbsp</option>
+														<option value="1752A-CLASS A">English</option>
+														
+														</select> 
+													</td></tr>
+													 </table>
+												</div>
+												<div class="modal-footer">
+													<table style="text-align:center; margin-left:0px;"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td>
+													<td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
+												
+												</div>
+									    </div>
+									</div>
+						</div>
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+						<script>
+						$(document).ready(function(){
+								$(".lang").modal('show');
+							});
+						</script>
+						
+						<div oncontextmenu="return false" class="modal" id="about" style="margin-top:30px;padding: 0px 25px 0px 25px; "oncopy="return false;" onpaste="return false;" oncut="return false;">
+									<div class="modal-dialog" >
+									  <div class="modal-content" style="background-color: #EBEBE5;width:700px; margin-left:-150px">
+										<div class="modal-header">
+										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+										  <h4 class="modal-title">About </h2>
+										</div><div class="container"></div>
+										<div class="modal-body">
+										<div class="container-fixed" >
+											<div class="col-md-12" style=" background-color:#fff;">
+											<div class="col-md-12">
+											
+												<div class="col-md-8">
+													 <h2 style="color:black;font-family: Times New Roman, Times, serif;"><b>Material Diclaration Tool<b> </h2>
+												</div>
+												<div class="col-md-4">
+													 <img class="img-responsive"  src="images/PLMLOGIX_min.png" alt="plm Logo" style="width:400px;height:75px;"	 / >
+												</div>
+											<div class="col-md-12" style="margin-top:-20px">
+											<hr>
+											<table style="margin-top:-15px; margin-left:25px">
+											<tr><td style="text-align:right;color:black"><b>MDT Version:</td><td style="width:25px"></td><td>0.3.9_Plus_beta</td></tr>
+											<tr><td style="text-align:right;color:black"><b>Release Date:</td><td></td><td>14-Oct-2015</td></tr>
+											<tr><td style="text-align:right;color:black"><b>JRE Version:</td><td></td><td>1.8.0_25</td></tr>
+											<tr><td style="text-align:right;color:black"><b>JVM Available Memory:</td><td></td><td>15.5625Mb</td></tr>
+											<tr><td style="text-align:right;color:black"><b>JVM Free Memory:</td><td></td><td>10.347358703613281Mb</td></tr>
+											
+											</table>
+											
+											</div >
+											<div class="col-md-12" style="margin-top:-10px">
+											<hr>
+											<p style="font-size: 100%;color:black">Warning: This Computer program is protected by copyright law and international treaties. Unauthorized reproduction
+												or distribution of this program, or any portion of it, may result in severe civil and criminal penalties, and will be
+												prosecuted to the maximum extent possible under the law. see License.txt for the spacific language governing
+												permissions and limitations under License.<br>
+												©2012 PLM Logix <br>
+												All Rights Reserved.<br></p>
+												<p><h3 style="color:black;margin-top:-5px">Contact Us at: mdt@plmlogix.com</h3><br></p>
+												<p><h3 style="color:black ; margin-top:-25px">PLM Logix extends a limited use license to:</h3><br></p>
+												<p><h2 style="color:black;font-family: Times New Roman, Times, serif; margin-top:-25px"><b>Material Diclaration Tool<b> </h2></p>
+											</p>
+											<p style="font-size: 70%;color:black">Unless required by application law or aggred to in writing, this software is distributed on an "AS IS"
+												BASIS, WITHOUT WARRANTIES OR CONDITIONS ANY KIND, either expressed or implied. please
+												review License.txt for the spacific language governing
+												permissions and limitations under License.<br>
+											</p>
+											<p style="font-size:70%;color:black; > If you do not agree to the lisence teems please click Cancel in the next popup window and cease any further use of software.
+											</p>
+											<p style="font-size: 70%;color:black">This Lisence will expire in thirty(30) days from its activation.<br> Please visit http://mdtapp.com for renewal options.</p>
+											</div>
+											</div>
+										</div>
+										 </div>
+										<div class="modal-footer">
+													<button type="button" style="width:100px; background-color:#EBEBE5 ; margin-top:20px;margin-right:265px" class="btn btn-default" data-dismiss="modal">Ok</button>
+												
+												</div>
+									 
+									  </div>
+									</div>
+								</div>
+						</div>
+						<!-- For Configuration dialog box -->
+								    <div class="modal fade config"  role="dialog" >
+										<div class="modal-dialog" style="width:950px ;margin-top:-5px;overflow:auto;">
+										
+										  
+										  <div class="modal-content" style="background-color:#EBEBE5">
+											<div class="modal-header">
+											  <button type="button" class="close" data-dismiss="modal">&times;</button>
+											  <h4 class="modal-title">Configuration</h4>
+											</div>
+											<div class="modal-body">
+											  <table style="width:900px ; margin-top:-15px; ">
+													<tr>
+														<td>
+															<fieldset class="fieldset13">
+																<legend><b>System Configuration</b></legend>
+																  <table style="margin-left:35px; margin-top:-5px">
+																		 <tr>
+																			<td style="text-align:right;">Legal Acceptance Display:</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="text-align:right;">Force Response Date:</td>
+																			<td>
+																			<select style="width:153px; margin-left:6px;  padding-bottom:5px; margin-bottom:7px;"> 
+																			  <option value="">&nbsp</option>
+																			  <option value="1752A-CLASS A">true</option>
+																			  <option value="1752A-CLASS C">false</option>
+																			</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Hide Admin Tab:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:7px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																			
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Default Language Set:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px;padding-bottom:5px; margin-bottom:7px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Default Language:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; "> 
+																				  <option value="">&nbsp </option>
+																				  <option value="1752A-CLASS A">EN</option>
+																				 
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">System Deviation:</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">System Legal Text:</td>
+																			<td><textarea rows="3" cols="24" name="comment" form="usrform" style="margin-left:6px;"> </textarea></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Validate Schema:</td>
+																			<td>
+																				<select style="width:100px; margin-left:6px; padding-bottom:5px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select>
+																			</td>
+																		 </tr>
+																	  </table>
+																	  *Warning: Settings this variable "True" May significantly increase the time to improve the XML File.
+															<fieldset class="fieldset13" style="width:400px; margin:8px">
+																<legend><b>Email Configuration</b></legend>
+																  <table style="margin-left:77px; margin-top:-5px">
+																		 <tr>
+																			<td style="text-align:right;">Export To Email:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="text-align:right;">Email Recepient:</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Email Subject:</td>
+																			<td><input type="text" class="input2" style="margin:6px"/></td>
+																			
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Email Export:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:7px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Zip</option>
+																				  <option value="NoZip">No Zip</option>
+																				  <option value="NoZip2">Zip and XML</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																	  </table>
+															</fieldset>
+															</fieldset>
+														</td>
+														<td>
+															<fieldset class="fieldset13" style="margin-top:-102px">
+																<legend><b>Validation Configuration</b></legend>
+																  <table style="margin-left:30px">
+																		 <tr>
+																			<td style="text-align:right;">Homogenious Materilal Document:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Warning</option>
+																				  <option value="NoZip">Error</option>
+																				  <option value="NoZip2">ignore</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="text-align:right;">Product/SubProduct Document:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Warning</option>
+																				  <option value="NoZip">Error</option>
+																				  <option value="NoZip2">ignore</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Class A Measured Mass:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																			
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Class C Measured Mass:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Export Validation:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px;padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Warning</option>
+																				  <option value="NoZip">Error</option>
+																				  <option value="NoZip2">ignore</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																	  </table>
+															</fieldset><br>
+															<fieldset class="fieldset13">
+																<legend><b>Export Configuration</b></legend>
+																  <table style="margin-left:55px">
+																		 <tr>
+																			<td style="text-align:right;">Remove Spaces in output File:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 
+																		 <tr>
+																			<td style="text-align:right;">File Name Delimeter:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">-</option>
+																				  <option value="1752A-CLASS C">-</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Export Substance:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="Zip">Mass</option>
+																				  <option value="NoZip">Concentration</option>
+																				  <option value="NoZip2">Both</option>
+																				</select> 
+																			</td>
+																			
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">Time Stamp:</td>
+																			<td>
+																				<select style="width:153px; margin-left:6px; padding-bottom:5px;"> 
+																				  <option value="">&nbsp</option>
+																				  <option value="1752A-CLASS A">true</option>
+																				  <option value="1752A-CLASS C">false</option>
+																				</select> 
+																			</td>
+																		 </tr>
+																		 <tr>
+																			<td style="text-align:right;">File Name Limit:</td>
+																			<td><input type="text" class="input2" style="margin:6px; margin-bottom:20px"/></td>
+																		 </tr>
+																	  </table>
+															</fieldset>
+														</td>
+														
+													</tr>
+										      <table>
+											</div>
+												<div class="modal-footer">
+													<table style="text-align:center; margin-left:200px;margin-top:-20px "><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px" class="btn btn-default" >Ok</button></td><td><button type="button" style="width:100px" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
+												
+												</div>
+										  </div>
+										  
+										</div>
+									</div>
+						
+						
 						<div class="modal fade" id="Export" role="dialog">
 									<div class="modal-dialog" style="width:1100px">
 									
@@ -1211,9 +1577,9 @@ $('.form_date').datetimepicker({
 													<th style="text-align:center">File Name</th>
 												</tr>
 												<tr>
-													<td  style="width:100px" data-target="#validation" data-toggle="modal"><select> 
+													<td  style="width:100px" data-target="#validation" data-toggle="modal" ><select> 
 														  <option value="">&nbsp </option>
-														  <option value="1752A-CLASS A" ><span data-target="#validation" data-toggle="modal">1752A-CLASS A</span></option>
+														  <option value="1752A-CLASS A"  ><span data-target="#validation" data-toggle="modal">1752A-CLASS A</span></option>
 														  <option value="1752A-CLASS C" data-target=".validation" data-toggle="modal">1752A-CLASS C</option>
 														  <option value="1752A-CLASS D" data-target="#validation" data-toggle="modal">1752A-CLASS D</option>
 														  <option value="1752A-CLASS A,CLASS C" href="#validation" data-toggle="modal">1752A-CLASS A,CLASS C</option>
@@ -1370,7 +1736,7 @@ $('.form_date').datetimepicker({
 										  </table>
 										  </div>
 										<div class="modal-footer">
-											<table style="text-align:center; margin-left:200px"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
+											<table style="text-align:center; margin-left:200px"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Ok</button></td><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
 										
 										</div>
 									  </div>
@@ -1408,7 +1774,7 @@ $('.form_date').datetimepicker({
 										<div class="modal-footer">
 													<table style="text-align:center; margin-left:130px;">
 													<tr>
-													<td style="padding:0px 65px 0px 40px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td>
+													<td style="padding:0px 65px 0px 40px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Ok</button></td>
 													<td><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Save</button></td>
 													</tr>
 													</table>
@@ -2292,7 +2658,8 @@ $('.form_date').datetimepicker({
 										 </tr></table>
 										</div>
 										<div class="modal-footer">
-													<table style="text-align:center; margin-left:0px;"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td><td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
+													<table style="text-align:center; margin-left:0px;"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td>
+													<td><button type="button" style="width:100px;background-color:#EBEBE5" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
 												
 												</div>
 									  </div>
@@ -2595,309 +2962,8 @@ $('.form_date').datetimepicker({
 								</div>
 						
 						
-								<div class="modal" id="about" style="margin-top:30px;padding: 0px 25px 0px 25px; ">
-									<div class="modal-dialog" >
-									  <div class="modal-content" style="background-color: #EBEBE5;width:700px; margin-left:-150px">
-										<div class="modal-header">
-										  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
-										  <h4 class="modal-title">About </h2>
-										</div><div class="container"></div>
-										<div class="modal-body">
-											<div class="col-md-12" style=" background-color:#fff;margin-top:-50px">
-											<div class="col-md-12">
-											<table style="color:black;font-family: Times New Roman, Times, serif;"><tr><td style="width:65%; margin-bottom:-25px"><h1><b>Material Diclaration Tool<b> </h1></td>
-											<td style="text-align:right"><img class="img-responsive"  src="images/PLMLOGIX_min.png" alt="plm Logo" style="margin-top:25px;width:300px;height:75px; float:right"	 / ></td></tr></table>
-											<div class="col-md-12" style="margin-top:-20px">
-											<hr>
-											<table style="margin-top:-15px; margin-left:25px">
-											<tr><td style="text-align:right;color:black"><b>MDT Version:</td><td style="width:25px"></td><td>0.3.9_Plus_beta</td></tr>
-											<tr><td style="text-align:right;color:black"><b>Release Date:</td><td></td><td>14-Oct-2015</td></tr>
-											<tr><td style="text-align:right;color:black"><b>JRE Version:</td><td></td><td>1.8.0_25</td></tr>
-											<tr><td style="text-align:right;color:black"><b>JVM Available Memory:</td><td></td><td>15.5625Mb</td></tr>
-											<tr><td style="text-align:right;color:black"><b>JVM Free Memory:</td><td></td><td>10.347358703613281Mb</td></tr>
-											
-											</table>
-											
-											</div >
-											<div class="col-md-12" style="margin-top:-10px">
-											<hr>
-											<p style="font-size: 100%;color:black">Warning: This Computer program is protected by copyright law and international treaties. Unauthorized reproduction
-												or distribution of this program, or any portion of it, may result in severe civil and criminal penalties, and will be
-												prosecuted to the maximum extent possible under the law. see License.txt for the spacific language governing
-												permissions and limitations under License.<br>
-												©2012 PLM Logix <br>
-												All Rights Reserved.<br></p>
-												<p><h3 style="color:black;margin-top:-5px">Contact Us at: mdt@olmlogix.com</h3><br></p>
-												<p><h3 style="color:black ; margin-top:-25px">PLM Logix extends a limited use license to:</h3><br></p>
-												<p><h1 style="color:black;font-family: Times New Roman, Times, serif; margin-top:-25px"><b>Material Diclaration Tool<b> </h1></p>
-											</p>
-											<p style="font-size: 70%;color:black">Unless required by application law or aggred to in writing, this software is distributed on an "AS IS"
-												BASIS, WITHOUT WARRANTIES OR CONDITIONS ANY KIND, either expressed or implied. please
-												review License.txt for the spacific language governing
-												permissions and limitations under License.<br>
-											</p>
-											<p style="font-size:70%;color:black; > If you do not agree to the lisence teems please click Cancel in the next popup window and cease any further use of software.
-											</p>
-											<p style="font-size: 70%;color:black">This Lisence will expire in thirty(30) days from its activation.<br> Please visit http://mdtapp.com for renewal options.</p>
-											</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-													<table style="text-align:center;; margin-left:200px;margin-top:25px"><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px; background-color:#EBEBE5" class="btn btn-default" >Ok</button></td></tr></table>
-												
-												</div>
-									  </div>
-									</div>
-								</div>
-								<!-- For Configuration dialog box -->
-								    <div class="modal fade config"  role="dialog" >
-										<div class="modal-dialog" style="width:950px ;margin-top:-5px;overflow:auto;">
-										
-										  
-										  <div class="modal-content" style="background-color:#EBEBE5">
-											<div class="modal-header">
-											  <button type="button" class="close" data-dismiss="modal">&times;</button>
-											  <h4 class="modal-title">Configuration</h4>
-											</div>
-											<div class="modal-body">
-											  <table style="width:900px ; margin-top:-15px; ">
-													<tr>
-														<td>
-															<fieldset class="fieldset13">
-																<legend><b>System Configuration</b></legend>
-																  <table style="margin-left:35px; margin-top:-25px">
-																		 <tr>
-																			<td style="text-align:right;">Legal Acceptance Display:</td>
-																			<td><input type="text" class="input2" style="margin:6px"/></td>
-																		 </tr>
-																		 
-																		 <tr>
-																			<td style="text-align:right;">Force Response Date:</td>
-																			<td>
-																			<select style="width:153px; margin-left:6px;  padding-bottom:5px; margin-bottom:7px;"> 
-																			  <option value="">&nbsp</option>
-																			  <option value="1752A-CLASS A">true</option>
-																			  <option value="1752A-CLASS C">false</option>
-																			</select> 
-																			</td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Hide Admin Tab:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:7px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">true</option>
-																				  <option value="1752A-CLASS C">false</option>
-																				</select> 
-																			</td>
-																			
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Default Language Set:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px;padding-bottom:5px; margin-bottom:7px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">true</option>
-																				  <option value="1752A-CLASS C">false</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Default Language:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; "> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">EN</option>
-																				 
-																				</select> 
-																			</td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">System Deviation:</td>
-																			<td><input type="text" class="input2" style="margin:6px"/></td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">System Legal Text:</td>
-																			<td><textarea rows="3" cols="24" name="comment" form="usrform" style="margin-left:6px;"> </textarea></td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Validate Schema:</td>
-																			<td>
-																				<select style="width:100px; margin-left:6px; padding-bottom:5px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">true</option>
-																				  <option value="1752A-CLASS C">false</option>
-																				</select>
-																			</td>
-																		 </tr>
-																	  </table>
-																	  *Warning: Settings this variable "True" May significantly increase the time to improve the XML File.
-															<fieldset class="fieldset13" style="width:400px; margin:8px">
-																<legend><b>Email Configuration</b></legend>
-																  <table style="margin-left:77px; margin-top:-20px">
-																		 <tr>
-																			<td style="text-align:right;">Export To Email:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">true</option>
-																				  <option value="1752A-CLASS C">false</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																		 
-																		 <tr>
-																			<td style="text-align:right;">Email Recepient:</td>
-																			<td><input type="text" class="input2" style="margin:6px"/></td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Email Subject:</td>
-																			<td><input type="text" class="input2" style="margin:6px"/></td>
-																			
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Email Export:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:7px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="Zip">Zip</option>
-																				  <option value="NoZip">No Zip</option>
-																				  <option value="NoZip2">Zip and XML</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																	  </table>
-															</fieldset>
-															</fieldset>
-														</td>
-														<td>
-															<fieldset class="fieldset13" style="margin-top:-58px">
-																<legend><b>Validation Configuration</b></legend>
-																  <table style="margin-left:30px">
-																		 <tr>
-																			<td style="text-align:right;">Homogenious Materilal Document:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="Zip">Warning</option>
-																				  <option value="NoZip">Error</option>
-																				  <option value="NoZip2">ignore</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																		 
-																		 <tr>
-																			<td style="text-align:right;">Product/SubProduct Document:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="Zip">Warning</option>
-																				  <option value="NoZip">Error</option>
-																				  <option value="NoZip2">ignore</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Class A Measured Mass:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">true</option>
-																				  <option value="1752A-CLASS C">false</option>
-																				</select> 
-																			</td>
-																			
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Class C Measured Mass:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">true</option>
-																				  <option value="1752A-CLASS C">false</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Export Validation:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px;padding-bottom:5px; margin-bottom:10px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="Zip">Warning</option>
-																				  <option value="NoZip">Error</option>
-																				  <option value="NoZip2">ignore</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																	  </table>
-															</fieldset><br>
-															<fieldset class="fieldset13">
-																<legend><b>Export Configuration</b></legend>
-																  <table style="margin-left:55px">
-																		 <tr>
-																			<td style="text-align:right;">Remove Spaces in output File:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">true</option>
-																				  <option value="1752A-CLASS C">false</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																		 
-																		 <tr>
-																			<td style="text-align:right;">File Name Delimeter:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">-</option>
-																				  <option value="1752A-CLASS C">-</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Export Substance:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px; margin-bottom:10px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="Zip">Mass</option>
-																				  <option value="NoZip">Concentration</option>
-																				  <option value="NoZip2">Both</option>
-																				</select> 
-																			</td>
-																			
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">Time Stamp:</td>
-																			<td>
-																				<select style="width:153px; margin-left:6px; padding-bottom:5px;"> 
-																				  <option value="">&nbsp</option>
-																				  <option value="1752A-CLASS A">true</option>
-																				  <option value="1752A-CLASS C">false</option>
-																				</select> 
-																			</td>
-																		 </tr>
-																		 <tr>
-																			<td style="text-align:right;">File Name Limit:</td>
-																			<td><input type="text" class="input2" style="margin:6px; margin-bottom:20px"/></td>
-																		 </tr>
-																	  </table>
-															</fieldset>
-														</td>
-														
-													</tr>
-										      <table>
-											</div>
-												<div class="modal-footer">
-													<table style="text-align:center; margin-left:200px;margin-top:-20px "><tr><td style="padding:0px 65px 0px 65px; "><button type="button" style="width:100px" class="btn btn-default" >Ok</button></td><td><button type="button" style="width:100px" class="btn btn-default" data-dismiss="modal">Cancel</button></td></tr></table>
-												
-												</div>
-										  </div>
-										  
-										</div>
-									</div>
-								  
-<!-- 								    <!-- For Admin dialog box -->
+								
+								    <!-- For Admin dialog box -->
 								    <div class="modal fade Admin"  role="dialog">
 										<div class="modal-dialog" style="width:950px">
 										
@@ -2938,7 +3004,7 @@ $('.form_date').datetimepicker({
 																		 </tr>
 																		 <tr>
 																			<td>&nbsp;</td>
-																			<td style="text-align:center"><button type="button" style="width:100px"class="btn btn-default" >Save</button></td>
+																			<td style="text-align:center; "><button type="button" style="width:100px; margin-top:25px"class="btn btn-default" >Save</button></td>
 																		 </tr>
 																	  </table>
 															</fieldset>
@@ -2973,6 +3039,10 @@ $('.form_date').datetimepicker({
 										</div>
 									</div>
 									
+								  
+								  
+								
+															
 									
 									
 

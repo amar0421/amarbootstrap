@@ -164,7 +164,7 @@ color: #fff;
 .fieldset1 { 
 padding:20px;
 float:left;
-width: 430px;
+width: 470px;
 /* margin-top: 10px; */
 border:1px solid black; 
 }
@@ -181,11 +181,10 @@ border:1px solid black; }
 .fieldset3 { 
 padding: 20px;
 float:left;
-width: 700px;
+width: 780px;
 margin-top: 10px;
 border:1px solid black; 
 }
-
 
 
 .fieldset4 { 
@@ -260,7 +259,7 @@ float:right; */
 margin-left:5px;
 padding: 30px;
 border:1px solid black;
-height:300px; }
+height:350px; }
 
 .fieldset13 { 
 
